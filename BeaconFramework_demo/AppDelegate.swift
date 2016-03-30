@@ -7,16 +7,43 @@
 //
 
 import UIKit
+import BeaconFramework
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    var notification = Notification()
+    var iiibeacon = IIIBeacon()
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("update:"), userInfo: nil, repeats: true)
+        
+        notification.get_push_message("54.64.237.112", major: 777, minor: 404, key: "0e74aa531e11166ca99e61545152d37cbf194f93", msg: _message)
+        
+        //var beacon_list: bc.bea
+        
+        iiibeacon.get_beacons_withkey("54.64.237.112", key: "0e74aa531e11166ca99e61545152d37cbf194f93", beacon_info: _beacon_info)
+        
+
         return true
+    }
+    
+    func update(timer: NSTimer) {
+        
+        if(_message.state == "Sucess")
+        {
+            print("done")
+        }
+        
+        if(_beacon_info.state == "Sucess")
+        {
+            print("done")
+        }
+        
     }
 
     func applicationWillResignActive(application: UIApplication) {
