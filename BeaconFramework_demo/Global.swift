@@ -9,5 +9,4 @@
 import Foundation
 import BeaconFramework
 
-var _message:Notification.message = Notification.message()
-var _beacon_info:IIIBeacon.BeaconInfo = IIIBeacon.BeaconInfo()
+

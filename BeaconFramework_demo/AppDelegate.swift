@@ -14,36 +14,46 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
+    //Initial BeaconFramework
     var notification = Notification()
     var iiibeacon = IIIBeacon()
+    
+    
+    //建立Beacon內容變數
+    var _beacon_info:IIIBeacon.BeaconInfo = IIIBeacon.BeaconInfo()
 
-
+    
+    //建立推播內容內容變數
+    var _message:Notification.message = Notification.message()
+   
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("update:"), userInfo: nil, repeats: true)
+
+        //取得對應Beacon清單
+        iiibeacon.get_beacons_withkey("server ip", key: "your key", beacon_info: _beacon_info)
         
-        notification.get_push_message("", major: 999, minor: 999, key: "", msg: _message)
+        //取得Beacon對應推播內容
+        notification.get_push_message("server ip", major: 999, minor: 999, key: "your key", msg: _message)
         
-        //var beacon_list: bc.bea
         
-        iiibeacon.get_beacons_withkey("", key: "", beacon_info: _beacon_info)
+        //建立timer用以驗證是否取得資料（資料將會自動傳回至對應變數）
+        NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("update:"), userInfo: nil, repeats: true)
         
 
         return true
     }
     
+    //驗證資料
     func update(timer: NSTimer) {
         
-        if(_message.state == "Sucess")
+        if(_message.state == "Sucess" && _beacon_info.state == "Sucess")
         {
-            print("done")
+            print("已取得資料")
+            timer.invalidate()
+            
         }
         
-        if(_beacon_info.state == "Sucess")
-        {
-            print("done")
-        }
         
     }
 
