@@ -5,8 +5,8 @@ III Beacon List and Notification information
 Import the BeaconFramework.framework file
 
 ###Swift:
-Copy the BeaconFramework.framework to xcode project path
-
+add the BeaconFramework.framework file to xcode project
+![image](https://raw.githubusercontent.com/joehour/BeaconFramework_demo/master/BeaconFramework_demo/image1.png)
 
 Binding this Framework
 
