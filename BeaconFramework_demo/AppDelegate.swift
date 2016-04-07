@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var iiibeacon = IIIBeacon()
     
     
-    //建立Beacon物件
+    //建立Beacon內容物件
     var _beacon_info:IIIBeacon.BeaconInfo = IIIBeacon.BeaconInfo()
 
     
