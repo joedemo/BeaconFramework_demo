@@ -105,6 +105,7 @@
 			children = (
 				B4F9FD6A1CB613F5005ED974 /* BeaconFramework.framework */,
 				B449BE441CABDD34008CF61E /* BeaconFramework_demo */,
+				B4F9FD6F1CB64123005ED974 /* Images */,
 				B449BE5D1CABDD34008CF61E /* BeaconFramework_demoTests */,
 				B449BE681CABDD35008CF61E /* BeaconFramework_demoUITests */,
 				B449BE431CABDD34008CF61E /* Products */,
@@ -154,6 +155,14 @@
 				B449BE6B1CABDD35008CF61E /* Info.plist */,
 			);
 			path = BeaconFramework_demoUITests;
+			sourceTree = "<group>";
+		};
+		B4F9FD6F1CB64123005ED974 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
+			path = BeaconFramework_demo;
 			sourceTree = "<group>";
 		};
 		DA21E9B0AC974A39B34215D7 /* Frameworks */ = {
