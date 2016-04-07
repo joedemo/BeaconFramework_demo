@@ -22,6 +22,7 @@
 		B4F9FD6D1CB613FD005ED974 /* BeaconFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4F9FD6A1CB613F5005ED974 /* BeaconFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B4F9FD711CB642E8005ED974 /* image1.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F9FD701CB642E8005ED974 /* image1.png */; };
 		B4F9FD731CB64470005ED974 /* image2.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F9FD721CB64470005ED974 /* image2.png */; };
+		B4F9FD751CB64AB6005ED974 /* image3.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F9FD741CB64AB6005ED974 /* image3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		B4F9FD6A1CB613F5005ED974 /* BeaconFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BeaconFramework.framework; sourceTree = "<group>"; };
 		B4F9FD701CB642E8005ED974 /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image1.png; sourceTree = "<group>"; };
 		B4F9FD721CB64470005ED974 /* image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image2.png; sourceTree = "<group>"; };
+		B4F9FD741CB64AB6005ED974 /* image3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image3.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 		B4F9FD6F1CB64123005ED974 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B4F9FD741CB64AB6005ED974 /* image3.png */,
 				B4F9FD721CB64470005ED974 /* image2.png */,
 				B4F9FD701CB642E8005ED974 /* image1.png */,
 			);
@@ -285,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B449BE541CABDD34008CF61E /* LaunchScreen.storyboard in Resources */,
+				B4F9FD751CB64AB6005ED974 /* image3.png in Resources */,
 				B4F9FD731CB64470005ED974 /* image2.png in Resources */,
 				B4F9FD711CB642E8005ED974 /* image1.png in Resources */,
 				B449BE511CABDD34008CF61E /* Assets.xcassets in Resources */,
