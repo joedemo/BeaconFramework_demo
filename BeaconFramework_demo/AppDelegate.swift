@@ -31,10 +31,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
 
         //取得對應Beacon清單
-        iiibeacon.get_beacons_withkey("server ip", key: "your key", beacon_info: _beacon_info)
+        iiibeacon.get_beacons_withkey("server ip", key: "app key", beacon_info: _beacon_info)
         
         //取得Beacon對應推播內容
-        notification.get_push_message("server ip", major: 999, minor: 999, key: "your key", msg: _message)
+        notification.get_push_message("server ip", major: 99999, minor: 99999, key: "app key", msg: _message)
         
         
         //建立timer用以驗證是否取得資料（資料將會自動傳回至對應變數）
