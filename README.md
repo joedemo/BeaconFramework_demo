@@ -1,16 +1,23 @@
 # iOS Beacon Notification SDK
-III Beacon List and Notification information
+III Beacon List and Notification Information
 
 ##Installation
 Import the BeaconFramework.framework file
 
-###Swift:
-add the BeaconFramework.framework file to xcode project
+####Swift:
+#####Setp1:
+Add the BeaconFramework.framework file to xcode project
+
 ![image](https://raw.githubusercontent.com/joehour/BeaconFramework_demo/master/BeaconFramework_demo/image1.png)
 
-Binding this Framework
+#####Setp2:
+Add the BeaconFramework.framework to Embedded Binaries
 
-Object-C
+![image](https://raw.githubusercontent.com/joehour/BeaconFramework_demo/master/BeaconFramework_demo/image2.png)
+
+#####Object-C
+Same as Swift, But you must set Embedded Content Contains Swift Code to "Yes" in Build Settings
+
 
 
 
