@@ -19,11 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var iiibeacon = IIIBeacon()
     
     
-    //建立Beacon內容變數
+    //建立Beacon物件
     var _beacon_info:IIIBeacon.BeaconInfo = IIIBeacon.BeaconInfo()
 
     
-    //建立推播內容內容變數
+    //建立推播內容物件
     var _message:Notification.message = Notification.message()
    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
