@@ -4,7 +4,7 @@ III Beacon List and Notification information
 ##Installation
 Import the BeaconFramework.framework file
 
-######Swift:
+#####Swift:
 add the BeaconFramework.framework file to xcode project
 ![image](https://raw.githubusercontent.com/joehour/BeaconFramework_demo/master/BeaconFramework_demo/image1.png)
 
@@ -12,7 +12,7 @@ Embedded BeaconFramework
 ![image](https://raw.githubusercontent.com/joehour/BeaconFramework_demo/master/BeaconFramework_demo/image2.png)
 
 
-######Object-C
+#####Object-C
 
 
 
