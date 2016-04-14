@@ -49,7 +49,7 @@
 - (void) update
 {
     
-    if ([_msg.state  isEqual: @"Sucess" ] && [_beacon_info.state isEqual:  @"Sucess"] ) {
+    if ( [_msg.state  isEqual: @"Sucess" ] && [_beacon_info.state isEqual:  @"Sucess"] ) {
         
     
         NSLog(@"已取得資料");
