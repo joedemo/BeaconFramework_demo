@@ -14,7 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		gx5OXhAUbJAllfOCpq07KBGEd2s=
+		V//+zLO0RIB0wZEGSk+//vWKqcg=
+		</data>
+		<key>Modules/BeaconFramework.swiftmodule/arm.swiftdoc</key>
+		<data>
+		LahDBOg1ANuMAKZUevTUfqNjoss=
+		</data>
+		<key>Modules/BeaconFramework.swiftmodule/arm.swiftmodule</key>
+		<data>
+		TKssgqiPZlzvThc7SWWpwUsFF1I=
 		</data>
 		<key>Modules/BeaconFramework.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -51,6 +59,28 @@
 			<key>hash2</key>
 			<data>
 			0Wtxd4kkQYlcknRBYnIKG3PeX6hdbtSMAEn5zUT1oA0=
+			</data>
+		</dict>
+		<key>Modules/BeaconFramework.swiftmodule/arm.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LahDBOg1ANuMAKZUevTUfqNjoss=
+			</data>
+			<key>hash2</key>
+			<data>
+			jrzr+9XVJucxe9XyWnFuIUqgQlDQa6rTqiu2t/c4m9s=
+			</data>
+		</dict>
+		<key>Modules/BeaconFramework.swiftmodule/arm.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TKssgqiPZlzvThc7SWWpwUsFF1I=
+			</data>
+			<key>hash2</key>
+			<data>
+			dcb34EL+JzOMBMIy7PWYY9jsY9lHsMiRtORC7V2bBsU=
 			</data>
 		</dict>
 		<key>Modules/BeaconFramework.swiftmodule/arm64.swiftdoc</key>
