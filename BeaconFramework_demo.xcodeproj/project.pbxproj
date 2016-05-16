@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B40E9B621CE9BCDF0038CB93 /* BeaconFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B40E9B611CE9BCDF0038CB93 /* BeaconFramework.framework */; };
+		B40E9B631CE9BCE40038CB93 /* BeaconFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B40E9B611CE9BCDF0038CB93 /* BeaconFramework.framework */; };
+		B40E9B641CE9BCE40038CB93 /* BeaconFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B40E9B611CE9BCDF0038CB93 /* BeaconFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B449BE461CABDD34008CF61E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B449BE451CABDD34008CF61E /* AppDelegate.swift */; };
 		B449BE481CABDD34008CF61E /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B449BE471CABDD34008CF61E /* RootViewController.swift */; };
 		B449BE4A1CABDD34008CF61E /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B449BE491CABDD34008CF61E /* DataViewController.swift */; };
@@ -17,9 +20,6 @@
 		B449BE5F1CABDD34008CF61E /* BeaconFramework_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B449BE5E1CABDD34008CF61E /* BeaconFramework_demoTests.swift */; };
 		B449BE6A1CABDD35008CF61E /* BeaconFramework_demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B449BE691CABDD35008CF61E /* BeaconFramework_demoUITests.swift */; };
 		B449BE881CABE60C008CF61E /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = B449BE871CABE60C008CF61E /* Global.swift */; };
-		B4F9FD6B1CB613F5005ED974 /* BeaconFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F9FD6A1CB613F5005ED974 /* BeaconFramework.framework */; };
-		B4F9FD6C1CB613FD005ED974 /* BeaconFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F9FD6A1CB613F5005ED974 /* BeaconFramework.framework */; };
-		B4F9FD6D1CB613FD005ED974 /* BeaconFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4F9FD6A1CB613F5005ED974 /* BeaconFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B4F9FD711CB642E8005ED974 /* image1.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F9FD701CB642E8005ED974 /* image1.png */; };
 		B4F9FD731CB64470005ED974 /* image2.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F9FD721CB64470005ED974 /* image2.png */; };
 		B4F9FD751CB64AB6005ED974 /* image3.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F9FD741CB64AB6005ED974 /* image3.png */; };
@@ -49,7 +49,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B4F9FD6D1CB613FD005ED974 /* BeaconFramework.framework in Embed Frameworks */,
+				B40E9B641CE9BCE40038CB93 /* BeaconFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,6 +57,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B40E9B611CE9BCDF0038CB93 /* BeaconFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BeaconFramework.framework; sourceTree = "<group>"; };
 		B449BE421CABDD34008CF61E /* BeaconFramework_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeaconFramework_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B449BE451CABDD34008CF61E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B449BE471CABDD34008CF61E /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -73,7 +74,6 @@
 		B449BE691CABDD35008CF61E /* BeaconFramework_demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconFramework_demoUITests.swift; sourceTree = "<group>"; };
 		B449BE6B1CABDD35008CF61E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B449BE871CABE60C008CF61E /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
-		B4F9FD6A1CB613F5005ED974 /* BeaconFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BeaconFramework.framework; sourceTree = "<group>"; };
 		B4F9FD701CB642E8005ED974 /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image1.png; sourceTree = "<group>"; };
 		B4F9FD721CB64470005ED974 /* image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image2.png; sourceTree = "<group>"; };
 		B4F9FD741CB64AB6005ED974 /* image3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image3.png; sourceTree = "<group>"; };
@@ -84,8 +84,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4F9FD6B1CB613F5005ED974 /* BeaconFramework.framework in Frameworks */,
-				B4F9FD6C1CB613FD005ED974 /* BeaconFramework.framework in Frameworks */,
+				B40E9B621CE9BCDF0038CB93 /* BeaconFramework.framework in Frameworks */,
+				B40E9B631CE9BCE40038CB93 /* BeaconFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,7 +109,7 @@
 		B449BE391CABDD34008CF61E = {
 			isa = PBXGroup;
 			children = (
-				B4F9FD6A1CB613F5005ED974 /* BeaconFramework.framework */,
+				B40E9B611CE9BCDF0038CB93 /* BeaconFramework.framework */,
 				B449BE441CABDD34008CF61E /* BeaconFramework_demo */,
 				B4F9FD6F1CB64123005ED974 /* Images */,
 				B449BE5D1CABDD34008CF61E /* BeaconFramework_demoTests */,

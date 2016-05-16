@@ -83,5 +83,68 @@
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BeaconFramework_demo/AppDelegate.swift"
+            timestampString = "485079678.670921"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "AppDelegate"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BeaconFramework_demo.AppDelegate.iiibeacon.getter : BeaconFramework.IIIBeacon"
+                  moduleName = "BeaconFramework_demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joejoe/Desktop/BeaconFramework_demo/BeaconFramework_demo/AppDelegate.swift"
+                  timestampString = "485080312.325332"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BeaconFramework_demo.AppDelegate.iiibeacon.setter : BeaconFramework.IIIBeacon"
+                  moduleName = "BeaconFramework_demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joejoe/Desktop/BeaconFramework_demo/BeaconFramework_demo/AppDelegate.swift"
+                  timestampString = "485080312.325494"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BeaconFramework_demo.AppDelegate.init () -&gt; BeaconFramework_demo.AppDelegate"
+                  moduleName = "BeaconFramework_demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joejoe/Desktop/BeaconFramework_demo/BeaconFramework_demo/AppDelegate.swift"
+                  timestampString = "485080312.325591"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "84">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
