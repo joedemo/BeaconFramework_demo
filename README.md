@@ -103,6 +103,17 @@ Same as Swift, But you must set Embedded Content Contains Swift Code to "Yes" in
 
   Build and run the BeaconFramework_demo(object-c).xcodeproj in Xcode
 
+##iOS 9 App Transport Security issue
+
+Apple made a radical decision with iOS 9, disabling all unsecured HTTP traffic from iOS apps..
+Here’s how to disable this issue. Open Info.plist, and add the following lines~
+
+    <key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+
 ##License
 BeaconFramework_demo is available under the Apache v2 License.
 
