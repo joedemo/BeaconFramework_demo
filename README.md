@@ -53,10 +53,10 @@ Apparently in iOS 8 SDK, requestAlwaysAuthorization (for background location) or
 
 There also needs to be NSLocationAlwaysUsageDescription or NSLocationWhenInUseUsageDescription key in Info.plist with a message to be displayed in the prompt. Open Info.plist, and add the following lines~
 
-   <key>NSLocationWhenInUseUsageDescription</key>
-	<string>demo</string>
-   <key>NSLocationAlwaysUsageDescription</key>
-	<string>demo</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+	   <string>demo</string>
+         <key>NSLocationAlwaysUsageDescription</key>
+	        <string>demo</string>
 
      
 
