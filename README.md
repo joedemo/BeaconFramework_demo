@@ -55,7 +55,6 @@ There also needs to be NSLocationAlwaysUsageDescription or NSLocationWhenInUseUs
 
    <key>NSLocationWhenInUseUsageDescription</key>
 	<string>demo</string>
-	
    <key>NSLocationAlwaysUsageDescription</key>
 	<string>demo</string>
 
