@@ -8,17 +8,17 @@ Import the BeaconFramework.framework file
 #####Setp1:
 Add the BeaconFramework.framework file to xcode project
 
-![image](https://raw.githubusercontent.com/joehour/BeaconFramework_demo/master/BeaconFramework_demo/image1.png)
+![image](https://raw.githubusercontent.com/joedemo/BeaconFramework_demo/master/BeaconFramework_demo/image1.png)
 
 #####Setp2:
 Add the BeaconFramework.framework to Embedded Binaries
 
-![image](https://raw.githubusercontent.com/joehour/BeaconFramework_demo/master/BeaconFramework_demo/image2.png)
+![image](https://raw.githubusercontent.com/joedemo/BeaconFramework_demo/master/BeaconFramework_demo/image2.png)
 
 #####Object-C
 Same as Swift, But you must set Embedded Content Contains Swift Code to "Yes" in Build Settings
 
-![image](https://raw.githubusercontent.com/joehour/BeaconFramework_demo/master/BeaconFramework_demo/image3.png)
+![image](https://raw.githubusercontent.com/joedemo/BeaconFramework_demo/master/BeaconFramework_demo/image3.png)
 
 ##Examples
 ####Swift:
