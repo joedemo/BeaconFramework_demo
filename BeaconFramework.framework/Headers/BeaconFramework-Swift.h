@@ -217,6 +217,7 @@ SWIFT_CLASS("_TtC15BeaconFramework18IIIBeaconDetection")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithServer_ip:(NSString * _Nonnull)server_ip key:(NSString * _Nonnull)key OBJC_DESIGNATED_INITIALIZER;
 - (void)Start;
+- (void)Start:(NSString * _Nonnull)proximity_uuid;
 - (void)Stop;
 - (void)locationManager:(CLLocationManager * _Null_unspecified)manager didRangeBeacons:(NSArray<CLBeacon *> * _Null_unspecified)beacons inRegion:(CLBeaconRegion * _Null_unspecified)region;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didEnterRegion:(CLRegion * _Nonnull)region;
