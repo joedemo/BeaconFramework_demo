@@ -34,10 +34,10 @@
     
     
     //取得對應Beacon清單
-    [_iiibeacon get_beacons_withkey:@"server ip" key: @"app key" beacon_info: _beacon_info];
+    [_iiibeacon get_beacons_withkey:@"52.69.184.56" key: @"82c3b9ef2cd4a09575921e2ce05013002bb7b38e" beacon_info: _beacon_info];
     
     //取得Beacon對應推播內容
-    [_notification get_push_message:@"server ip" major:999999 minor:999999 key:@"app key" msg:_msg];
+    [_notification get_push_message:@"52.69.184.56" major:777 minor:80 key:@"82c3b9ef2cd4a09575921e2ce05013002bb7b38e" msg:_msg];
     
     //建立timer用以驗證是否取得資料（資料將會自動傳回至對應變數）
      _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(update) userInfo:nil repeats:YES];
