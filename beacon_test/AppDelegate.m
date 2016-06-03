@@ -11,36 +11,41 @@
 
 
 
-@interface AppDelegate ()
+@interface AppDelegate ()<IIIBeaconDetectionDelegate>
 
 @end
 
+//建立推播內容清單資料結構
+@interface _Message: NSObject
+{
+  @public
+    message *msg;
+    NSString *uuid;
+}
+@end
+@implementation _Message
+
+@end
 
 @implementation AppDelegate
-
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
     //Initial BeaconFramework
-    _notification = [Notification new] ;
-    _iiibeacon = [IIIBeacon new];
-    
-    //建立推播內容物件
-    _msg = [message new] ;
-    
-    //建立Beacon內容物件
-    _beacon_info = [BeaconInfo new] ;
-    
-    
-    //取得對應Beacon清單
-    [_iiibeacon get_beacons_withkey:@"server ip" key: @"app key" beacon_info: _beacon_info];
-    
-    //取得Beacon對應推播內容
-    [_notification get_push_message:@"server ip" major:999999 minor:999999 key:@"app key" msg:_msg];
-    
+     _notification = [Notification new] ;
+
     //建立timer用以驗證是否取得資料（資料將會自動傳回至對應變數）
      _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(update) userInfo:nil repeats:YES];
+    
+    _detection = [[IIIBeaconDetection alloc] initWithServer_ip:@"52.69.184.56" key:@"c76294a01287f20adca29c36d964d609133ccbee"];
+    _detection.delegate = self;
+    
+    [_detection Start];
+    
+    _message_list = [NSMutableArray new];
+    
+    
     
     return YES;
 }
@@ -49,16 +54,56 @@
 - (void) update
 {
     
-    if ( [_msg.state  isEqual: @"Sucess" ] && [_beacon_info.state isEqual:  @"Sucess"] ) {
+    if(_message_list.count > 0 )
+    {
         
-    
-        NSLog(@"已取得資料");
-        _timer.invalidate;
+        for (_Message *item in _message_list) {
+            if ([item->msg.state isEqual: @"Sucess"]) {
+                
+                NSString *result =  [NSString stringWithFormat:@"%@%@%@", @"已取得 ", item->uuid, @" 資料"];
+                NSLog(@"%@",result);
+                [_timer invalidate];
+                
+                break;
+            }
+        }
+        
     }
 }
 
-
-
+////找到對應Beacon (required!!)
+-(void)BeaconDetectd{
+    if (_detection.ActiveBeaconList.count > 0) {
+        for (ActiveBeacon* key in _detection.ActiveBeaconList) {
+            
+            BOOL found = NO;
+            for (_Message *item in _message_list) {
+                if ([item->uuid isEqualToString:key.uuid]) {
+                    found = YES;
+                }
+            }
+           
+            if (!found) {
+                
+                //建立推播內容物件
+                _Message *message_item = [_Message new];
+                message_item->msg = [message new];
+                message_item->uuid = key.uuid;
+            
+                //value.message = Notification.message()
+                //value.uuid = item.uuid
+            
+                //取得Beacon對應推播內容
+                [_notification get_push_message:@"52.69.184.56" major:key.major.intValue minor:key.minor.intValue key:@"c76294a01287f20adca29c36d964d609133ccbee" msg:message_item->msg];
+               [_message_list addObject:message_item];
+            
+            
+            }
+        }
+        
+        
+    }
+}
 
 
 
