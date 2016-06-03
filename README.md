@@ -21,7 +21,7 @@ Same as Swift, But you must set Embedded Content Contains Swift Code to "Yes" in
 ![image](https://raw.githubusercontent.com/joedemo/BeaconFramework_demo/master/BeaconFramework_demo/image3.png)
 
 ##Examples
-####Swift:
+####Object-C:
    Please Check out the sample code    
     
 
@@ -30,10 +30,10 @@ Same as Swift, But you must set Embedded Content Contains Swift Code to "Yes" in
 - iOS 8.0 or higher
 
 ##Demo
-####Swift:
-- IIIBeaconDetect branch
+####Object-C:
+- IIIBeaconDetect(object-c) branch
 
-  Build and run the BeaconFramework_demo.xcodeproj in Xcode
+  Build and run the BeaconFramework_demo.xcodeproj(object-c) in Xcode
 
 
 ##iOS 9 App Transport Security issue
