@@ -89,10 +89,7 @@
                 _Message *message_item = [_Message new];
                 message_item->msg = [message new];
                 message_item->uuid = key.uuid;
-            
-                //value.message = Notification.message()
-                //value.uuid = item.uuid
-            
+       
                 //取得Beacon對應推播內容
                 [_notification get_push_message:@"server ip" major:key.major.intValue minor:key.minor.intValue key:@"app key" msg:message_item->msg];
                [_message_list addObject:message_item];
