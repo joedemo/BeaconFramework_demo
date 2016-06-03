@@ -38,7 +38,7 @@
     //建立timer用以驗證是否取得資料（資料將會自動傳回至對應變數）
      _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(update) userInfo:nil repeats:YES];
     
-    _detection = [[IIIBeaconDetection alloc] initWithServer_ip:@"52.69.184.56" key:@"c76294a01287f20adca29c36d964d609133ccbee"];
+    _detection = [[IIIBeaconDetection alloc] initWithServer_ip:@"server ip" key:@"app key"];
     _detection.delegate = self;
     
     [_detection Start];
@@ -94,7 +94,7 @@
                 //value.uuid = item.uuid
             
                 //取得Beacon對應推播內容
-                [_notification get_push_message:@"52.69.184.56" major:key.major.intValue minor:key.minor.intValue key:@"c76294a01287f20adca29c36d964d609133ccbee" msg:message_item->msg];
+                [_notification get_push_message:@"server ip" major:key.major.intValue minor:key.minor.intValue key:@"app key" msg:message_item->msg];
                [_message_list addObject:message_item];
             
             
