@@ -17,9 +17,9 @@
 		B449BE5F1CABDD34008CF61E /* BeaconFramework_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B449BE5E1CABDD34008CF61E /* BeaconFramework_demoTests.swift */; };
 		B449BE6A1CABDD35008CF61E /* BeaconFramework_demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B449BE691CABDD35008CF61E /* BeaconFramework_demoUITests.swift */; };
 		B449BE881CABE60C008CF61E /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = B449BE871CABE60C008CF61E /* Global.swift */; };
-		B4B4EF441D02920C0057D504 /* BeaconFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B4EF431D02920C0057D504 /* BeaconFramework.framework */; };
-		B4B4EF451D0292120057D504 /* BeaconFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B4EF431D02920C0057D504 /* BeaconFramework.framework */; };
-		B4B4EF461D0292120057D504 /* BeaconFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B4EF431D02920C0057D504 /* BeaconFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B4B4EF5F1D02B0A90057D504 /* BeaconFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B4EF5E1D02B0A90057D504 /* BeaconFramework.framework */; };
+		B4B4EF601D02B0B60057D504 /* BeaconFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B4EF5E1D02B0A90057D504 /* BeaconFramework.framework */; };
+		B4B4EF611D02B0B60057D504 /* BeaconFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4B4EF5E1D02B0A90057D504 /* BeaconFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B4F9FD711CB642E8005ED974 /* image1.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F9FD701CB642E8005ED974 /* image1.png */; };
 		B4F9FD731CB64470005ED974 /* image2.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F9FD721CB64470005ED974 /* image2.png */; };
 		B4F9FD751CB64AB6005ED974 /* image3.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F9FD741CB64AB6005ED974 /* image3.png */; };
@@ -43,13 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B449BEC51CACE0F7008CF61E /* Embed Frameworks */ = {
+		B4B4EF551D02AC740057D504 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B4B4EF461D0292120057D504 /* BeaconFramework.framework in Embed Frameworks */,
+				B4B4EF611D02B0B60057D504 /* BeaconFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,7 +73,7 @@
 		B449BE691CABDD35008CF61E /* BeaconFramework_demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconFramework_demoUITests.swift; sourceTree = "<group>"; };
 		B449BE6B1CABDD35008CF61E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B449BE871CABE60C008CF61E /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
-		B4B4EF431D02920C0057D504 /* BeaconFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BeaconFramework.framework; sourceTree = "<group>"; };
+		B4B4EF5E1D02B0A90057D504 /* BeaconFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BeaconFramework.framework; sourceTree = "<group>"; };
 		B4F9FD701CB642E8005ED974 /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image1.png; sourceTree = "<group>"; };
 		B4F9FD721CB64470005ED974 /* image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image2.png; sourceTree = "<group>"; };
 		B4F9FD741CB64AB6005ED974 /* image3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image3.png; sourceTree = "<group>"; };
@@ -84,8 +84,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4B4EF441D02920C0057D504 /* BeaconFramework.framework in Frameworks */,
-				B4B4EF451D0292120057D504 /* BeaconFramework.framework in Frameworks */,
+				B4B4EF5F1D02B0A90057D504 /* BeaconFramework.framework in Frameworks */,
+				B4B4EF601D02B0B60057D504 /* BeaconFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,7 +109,7 @@
 		B449BE391CABDD34008CF61E = {
 			isa = PBXGroup;
 			children = (
-				B4B4EF431D02920C0057D504 /* BeaconFramework.framework */,
+				B4B4EF5E1D02B0A90057D504 /* BeaconFramework.framework */,
 				B449BE441CABDD34008CF61E /* BeaconFramework_demo */,
 				B4F9FD6F1CB64123005ED974 /* Images */,
 				B449BE5D1CABDD34008CF61E /* BeaconFramework_demoTests */,
@@ -191,7 +191,7 @@
 				B449BE3E1CABDD34008CF61E /* Sources */,
 				B449BE3F1CABDD34008CF61E /* Frameworks */,
 				B449BE401CABDD34008CF61E /* Resources */,
-				B449BEC51CACE0F7008CF61E /* Embed Frameworks */,
+				B4B4EF551D02AC740057D504 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
