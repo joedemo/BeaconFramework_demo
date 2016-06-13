@@ -43,8 +43,8 @@
     
     
     //IIIBeaconDetection
-    [_iiibeacon get_beacons_withkey_security:@"ideas.iiibeacon.net" key: @"app key" completion: ^(BeaconInfo *item , BOOL result) {
-        if (result) {
+    [_iiibeacon get_beacons_withkey_security:@"ideas.iiibeacon.net" key: @"app key" completion: ^(BeaconInfo *item , BOOL Sucess) {
+        if (Sucess) {
             //app key對應beacon取得成功
             dispatch_async(dispatch_get_main_queue(), ^{
                 
@@ -61,6 +61,7 @@
     }
      
      ];
+    
 
 
     _message_list = [NSMutableArray new];
