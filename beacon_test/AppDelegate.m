@@ -34,18 +34,36 @@
     
     //Initial BeaconFramework
      _notification = [Notification new] ;
+    _iiibeacon = [IIIBeacon new];
+    _detection = [IIIBeaconDetection new];
+    
 
     //建立timer用以驗證是否取得資料（資料將會自動傳回至對應變數）
      _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(update) userInfo:nil repeats:YES];
     
-    _detection = [[IIIBeaconDetection alloc] initWithServer_ip:@"server ip" key:@"app key"];
-    _detection.delegate = self;
     
-    [_detection Start];
-    
+    //IIIBeaconDetection
+    [_iiibeacon get_beacons_withkey_security:@"ideas.iiibeacon.net" key: @"app key" completion: ^(BeaconInfo *item , BOOL result) {
+        if (result) {
+            //app key對應beacon取得成功
+            dispatch_async(dispatch_get_main_queue(), ^{
+                
+                //Initial Detection
+                _detection = [[IIIBeaconDetection alloc] initWithBeacon_data:item];
+                
+                 //委派 IIIBeaconDetection 給 AppDelegate
+                _detection.delegate = self;
+                
+                 //開始偵測
+                [_detection Start];
+            });
+        }
+    }
+     
+     ];
+
+
     _message_list = [NSMutableArray new];
-    
-    
     
     return YES;
 }
@@ -60,8 +78,7 @@
         for (_Message *item in _message_list) {
             if ([item->msg.state isEqual: @"Sucess"]) {
                 
-                NSString *result =  [NSString stringWithFormat:@"%@%@%@", @"已取得 ", item->uuid, @" 資料"];
-                NSLog(@"%@",result);
+
                 [_timer invalidate];
                 
                 break;
@@ -89,10 +106,17 @@
                 _Message *message_item = [_Message new];
                 message_item->msg = [message new];
                 message_item->uuid = key.uuid;
-       
+    
                 //取得Beacon對應推播內容
-                [_notification get_push_message:@"server ip" major:key.major.intValue minor:key.minor.intValue key:@"app key" msg:message_item->msg];
-               [_message_list addObject:message_item];
+                [_notification get_push_message_security:@"ideas.iiibeacon.net" major:key.major.intValue minor:key.minor.intValue key:@"app key" completion:^(message *item, BOOL Sucess){
+                    if (Sucess) {
+                        //資料回傳成功
+                        NSLog(@"%@", item.content.coupons[0].photoUrl);
+                    }
+                }];
+                
+                
+                [_message_list addObject:message_item];
             
             
             }

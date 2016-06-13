@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B43D76151D019E1400B27C8E /* BeaconFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B43D76141D019E1400B27C8E /* BeaconFramework.framework */; };
-		B43D76161D019E1B00B27C8E /* BeaconFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B43D76141D019E1400B27C8E /* BeaconFramework.framework */; };
-		B43D76171D019E1B00B27C8E /* BeaconFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B43D76141D019E1400B27C8E /* BeaconFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B49212361D0EADD1002D99E5 /* BeaconFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B49212351D0EADD1002D99E5 /* BeaconFramework.framework */; };
+		B49212371D0EADD7002D99E5 /* BeaconFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B49212351D0EADD1002D99E5 /* BeaconFramework.framework */; };
+		B49212381D0EADD7002D99E5 /* BeaconFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B49212351D0EADD1002D99E5 /* BeaconFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B4FC7ECE1CB4B6050083F64A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4FC7ECD1CB4B6050083F64A /* main.m */; };
 		B4FC7ED11CB4B6050083F64A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4FC7ED01CB4B6050083F64A /* AppDelegate.m */; };
 		B4FC7ED41CB4B6050083F64A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4FC7ED31CB4B6050083F64A /* ViewController.m */; };
@@ -25,7 +25,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B43D76171D019E1B00B27C8E /* BeaconFramework.framework in Embed Frameworks */,
+				B49212381D0EADD7002D99E5 /* BeaconFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -33,7 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B43D76141D019E1400B27C8E /* BeaconFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BeaconFramework.framework; sourceTree = "<group>"; };
+		B49212351D0EADD1002D99E5 /* BeaconFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BeaconFramework.framework; sourceTree = "<group>"; };
 		B4FC7EC91CB4B6050083F64A /* BeaconFramework_demo(object-c).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BeaconFramework_demo(object-c).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4FC7ECD1CB4B6050083F64A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B4FC7ECF1CB4B6050083F64A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,8 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B43D76151D019E1400B27C8E /* BeaconFramework.framework in Frameworks */,
-				B43D76161D019E1B00B27C8E /* BeaconFramework.framework in Frameworks */,
+				B49212361D0EADD1002D99E5 /* BeaconFramework.framework in Frameworks */,
+				B49212371D0EADD7002D99E5 /* BeaconFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +62,7 @@
 		B4FC7EC01CB4B6040083F64A = {
 			isa = PBXGroup;
 			children = (
-				B43D76141D019E1400B27C8E /* BeaconFramework.framework */,
+				B49212351D0EADD1002D99E5 /* BeaconFramework.framework */,
 				B4FC7ECB1CB4B6050083F64A /* beacon_test */,
 				B4FC7ECA1CB4B6050083F64A /* Products */,
 			);
