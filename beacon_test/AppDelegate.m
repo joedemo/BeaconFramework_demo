@@ -43,6 +43,7 @@
     
     
     //IIIBeaconDetection
+    //Production Environment ( If Test Environment, Please use get_beacons_withkey:@"52.69.184.56" key: @"app key" ... )
     [_iiibeacon get_beacons_withkey_security:@"ideas.iiibeacon.net" key: @"app key" completion: ^(BeaconInfo *item , BOOL Sucess) {
         if (Sucess) {
             //app key對應beacon取得成功
@@ -100,7 +101,7 @@
                     found = YES;
                 }
             }
-           
+            
             if (!found) {
                 
                 //建立推播內容物件
@@ -109,6 +110,7 @@
                 message_item->uuid = key.uuid;
     
                 //取得Beacon對應推播內容
+                 //Production Environment ( If Test Environment, Please use get_push_message:@"52.69.184.56" .... )
                 [_notification get_push_message_security:@"ideas.iiibeacon.net" major:key.major.intValue minor:key.minor.intValue key:@"app key" completion:^(message *item, BOOL Sucess){
                     if (Sucess) {
                         //資料回傳成功

@@ -27,13 +27,17 @@ Same as Swift, But you must set Embedded Content Contains Swift Code to "Yes" in
 
 ##Requirements
 - Xcode 7.3 or higher
-- iOS 8.0 or higher
+- iOS 8.3 or higher
 
 ##Demo
+####Swift:
+- IIIBeaconDetect branch
+
+  Build and run the BeaconFramework_demo.xcodeproj in Xcode
 ####Object-C:
 - IIIBeaconDetect(object-c) branch
 
-  Build and run the BeaconFramework_demo.xcodeproj(object-c) in Xcode
+  Build and run the BeaconFramework_demo(object-c) in Xcode
 
 
 ##iOS 9 App Transport Security issue
