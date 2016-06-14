@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, IIIBeaconDetectionDelegat
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        
+        //Production Environment ( If Test Environment, Please use get_beacons_withkey("52.69.184.56", key: "app key", .....) )
         iiibeacon.get_beacons_withkey_security("ideas.iiibeacon.net", key: "app key", completion: { (beacon_info: IIIBeacon.BeaconInfo, Sucess: Bool) in
             if(Sucess){
                 dispatch_async(dispatch_get_main_queue(),{
@@ -45,6 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, IIIBeaconDetectionDelegat
                 })            }
             }
         )
+        
 
         //建立timer用以驗證是否取得資料（資料將會自動傳回至對應變數）
         //NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(AppDelegate.update(_:)), userInfo: nil, repeats: true)
@@ -84,6 +85,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, IIIBeaconDetectionDelegat
                         value.uuid = item.uuid
                         
                         //取得Beacon對應推播內容
+                        ////Production Environment ( If Test Environment, Please use get_push_message("52.69.184.56", ....) )
                         notification.get_push_message_security("ideas.iiibeacon.net", major: Int(item.major!)!, minor: Int(item.minor!)!, key: "app key" ){ (completion) -> () in
                             
                             if(completion.Sucess){
