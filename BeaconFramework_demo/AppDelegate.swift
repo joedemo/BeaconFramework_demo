@@ -16,7 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, IIIBeaconDetectionDelegat
     
     //Initial BeaconFramework
     var notification = Notification()
-    var detection = IIIBeaconDetection(server_ip: "server ip", key: "app key")
+    var detection = IIIBeaconDetection()
+    var iiibeacon = IIIBeacon()
     
     //建立推播內容物件列表
     var message_list: [_Message] = []
@@ -27,35 +28,47 @@ class AppDelegate: UIResponder, UIApplicationDelegate, IIIBeaconDetectionDelegat
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        //委派 IIIBeaconDetection 給 AppDelegate
-        detection.delegate = self
         
-        //開始偵測
-        detection.Start()
+        iiibeacon.get_beacons_withkey_security("ideas.iiibeacon.net", key: "app key", completion: { (beacon_info: IIIBeacon.BeaconInfo, Sucess: Bool) in
+            if(Sucess){
+                dispatch_async(dispatch_get_main_queue(),{
+                    
+                    //Initial Detection
+                    self.detection = IIIBeaconDetection(beacon_data: beacon_info)
+                    
+                    //委派 IIIBeaconDetection 給 AppDelegate
+                    self.detection.delegate  = self
+                    
+                    //開始偵測
+                    self.detection.Start()
+                    
+                })            }
+            }
+        )
 
         //建立timer用以驗證是否取得資料（資料將會自動傳回至對應變數）
-        NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(AppDelegate.update(_:)), userInfo: nil, repeats: true)
+        //NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(AppDelegate.update(_:)), userInfo: nil, repeats: true)
         
         return true
     }
     
     //驗證資料
-    func update(timer: NSTimer) {
-        
-        if(message_list.count > 0 )
-        {
-            
-            if let item = message_list.filter({$0.message!.state == "Sucess"}).first {
-                
-                print("已取得 " + item.uuid! + " 資料")
-                timer.invalidate()
-                
-            }
-            
-        }
-        
-        
-    }
+//    func update(timer: NSTimer) {
+//        
+//        if(message_list.count > 0 )
+//        {
+//            
+//            if let item = message_list.filter({$0.message!.state == "Sucess"}).first {
+//                
+//                print("已取得 " + item.uuid! + " 資料")
+//                timer.invalidate()
+//                
+//            }
+//            
+//        }
+//        
+//        
+//    }
     
     //找到對應Beacon (required!!)
     func BeaconDetectd() {
@@ -71,7 +84,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, IIIBeaconDetectionDelegat
                         value.uuid = item.uuid
                         
                         //取得Beacon對應推播內容
-                        notification.get_push_message("server ip", major: Int(item.major!)!, minor: Int(item.minor!)!, key: "app key", msg: value.message!)
+                        notification.get_push_message_security("ideas.iiibeacon.net", major: Int(item.major!)!, minor: Int(item.minor!)!, key: "app key" ){ (completion) -> () in
+                            
+                            if(completion.Sucess){
+                                
+                                //資料回傳成功
+                                print("已取得 " + item.uuid! + " 資料; photoUrl: " + completion.msg.content!.coupons[0].photoUrl!)
+                            }
+                        }
+                        
                         
                         message_list.append(value)
                     }
