@@ -295,8 +295,9 @@
 					"$(PROJECT_DIR)/beacon_test",
 				);
 				INFOPLIST_FILE = beacon_test/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACH_O_TYPE = mh_execute;
 				PRODUCT_BUNDLE_IDENTIFIER = "iii.ideas.beacon-test";
 				PRODUCT_NAME = "BeaconFramework_demo(object-c)";
 			};
@@ -313,8 +314,9 @@
 					"$(PROJECT_DIR)/beacon_test",
 				);
 				INFOPLIST_FILE = beacon_test/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACH_O_TYPE = mh_execute;
 				PRODUCT_BUNDLE_IDENTIFIER = "iii.ideas.beacon-test";
 				PRODUCT_NAME = "BeaconFramework_demo(object-c)";
 			};

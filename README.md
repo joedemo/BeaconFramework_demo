@@ -27,7 +27,7 @@ Same as Swift, But you must set Embedded Content Contains Swift Code to "Yes" in
 
 ##Requirements
 - Xcode 7.3 or higher
-- iOS 7.0 or higher
+- iOS 8.0 or higher
 
 ##Demo
 ####Swift:
