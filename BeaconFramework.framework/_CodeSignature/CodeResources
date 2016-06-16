@@ -14,23 +14,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		6yjM8oFzzgEc4HyjqsKn67jBVpQ=
+		+ytQLjS+gUZR7ayRA5QqdFtqAbc=
 		</data>
 		<key>Modules/BeaconFramework.swiftmodule/arm.swiftdoc</key>
 		<data>
-		0h+HvdvVs7EFhhbWU2sqnOX+DNU=
+		kf6r6ej25KlRuGoa9i2pQyEwIBw=
 		</data>
 		<key>Modules/BeaconFramework.swiftmodule/arm.swiftmodule</key>
 		<data>
-		obGMnKndfijKAxme58Xp/5VT0R0=
+		uC7H96aI4kKiXZYGfbiZTz8l0lo=
 		</data>
 		<key>Modules/BeaconFramework.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		Y1Cm2b1RjlLowoAI4dgk6E6wHIc=
+		6C3MSI8PtvpTf+HO34yeYtsvbeE=
 		</data>
 		<key>Modules/BeaconFramework.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		ei0GQtEFj4/mFq+Qi19sFg3HgcI=
+		4cO8kKQNTrIGrQRo3XIha5w3Wbw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -65,44 +65,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0h+HvdvVs7EFhhbWU2sqnOX+DNU=
+			kf6r6ej25KlRuGoa9i2pQyEwIBw=
 			</data>
 			<key>hash2</key>
 			<data>
-			7OFgkk/S3ktnvsMvYJOiYqxZdHYCYBluz6Zc+Q2GM/w=
+			YuWL0YUrENM7VZoH5K4WOhLzGEFc4y5uw6Gmt8AVeB8=
 			</data>
 		</dict>
 		<key>Modules/BeaconFramework.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			obGMnKndfijKAxme58Xp/5VT0R0=
+			uC7H96aI4kKiXZYGfbiZTz8l0lo=
 			</data>
 			<key>hash2</key>
 			<data>
-			QOpdNVm7Dcwks7lnK0tRSJ5VvjWND6WadyW/mEG5nPI=
+			yHeDbTBswYpLvta22sYGoMhEQYJRMm3xJyYv0tKZmU4=
 			</data>
 		</dict>
 		<key>Modules/BeaconFramework.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Y1Cm2b1RjlLowoAI4dgk6E6wHIc=
+			6C3MSI8PtvpTf+HO34yeYtsvbeE=
 			</data>
 			<key>hash2</key>
 			<data>
-			K5eYXG3EJycaSR2Rmc9pmGbDemeW+7tAJi6MIQzMOTA=
+			syJA4FQ7oLnkzW77fLJvWMvsui23OgisIzY/x0qF69s=
 			</data>
 		</dict>
 		<key>Modules/BeaconFramework.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ei0GQtEFj4/mFq+Qi19sFg3HgcI=
+			4cO8kKQNTrIGrQRo3XIha5w3Wbw=
 			</data>
 			<key>hash2</key>
 			<data>
-			Jvlr/7W7NojkHF5DEUKVEH1OE4xTwtackgVEG2S8jmM=
+			8HqxSspmI6sO3K5CW0TpxXACUne/7QV/2l8h6qQ4uxY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
