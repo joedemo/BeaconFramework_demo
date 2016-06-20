@@ -65,10 +65,6 @@ There also needs to be NSLocationAlwaysUsageDescription or NSLocationWhenInUseUs
 	        <string>demo</string>
 
 
-##BeaconFramework on iOS 7
-BeaconFramework(dynamic framework) is only supported on iOS 8 and later. Fortunately dynamic frameworks can be loaded by applications and used on earlier versions of iOS. If you need to deploy on iOS 7, the application must weak link against BeaconFramework. To do so, in your application target’s “Link Binary With Libraries” Build Phase, designate the BeaconFramework as “Optional”. This will weakly link against the framework.
-     
-
 ##License
 BeaconFramework_demo is available under the Apache v2 License.
 
