@@ -21,8 +21,6 @@
 		B4F9FD731CB64470005ED974 /* image2.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F9FD721CB64470005ED974 /* image2.png */; };
 		B4F9FD751CB64AB6005ED974 /* image3.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F9FD741CB64AB6005ED974 /* image3.png */; };
 		B4FF71A41D1260E1001597C5 /* BeaconFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FF71A31D1260E1001597C5 /* BeaconFramework.framework */; };
-		B4FF71A51D1260E4001597C5 /* BeaconFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FF71A31D1260E1001597C5 /* BeaconFramework.framework */; };
-		B4FF71A61D1260E4001597C5 /* BeaconFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4FF71A31D1260E1001597C5 /* BeaconFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +47,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B4FF71A61D1260E4001597C5 /* BeaconFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,7 +73,7 @@
 		B4F9FD701CB642E8005ED974 /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image1.png; sourceTree = "<group>"; };
 		B4F9FD721CB64470005ED974 /* image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image2.png; sourceTree = "<group>"; };
 		B4F9FD741CB64AB6005ED974 /* image3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image3.png; sourceTree = "<group>"; };
-		B4FF71A31D1260E1001597C5 /* BeaconFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BeaconFramework.framework; sourceTree = "<group>"; };
+		B4FF71A31D1260E1001597C5 /* BeaconFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BeaconFramework.framework; path = /Users/joejoe/Documents/Project/BeaconFramework_demo/BeaconFramework.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +82,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4FF71A41D1260E1001597C5 /* BeaconFramework.framework in Frameworks */,
-				B4FF71A51D1260E4001597C5 /* BeaconFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,7 +105,6 @@
 		B449BE391CABDD34008CF61E = {
 			isa = PBXGroup;
 			children = (
-				B4FF71A31D1260E1001597C5 /* BeaconFramework.framework */,
 				B449BE441CABDD34008CF61E /* BeaconFramework_demo */,
 				B4F9FD6F1CB64123005ED974 /* Images */,
 				B449BE5D1CABDD34008CF61E /* BeaconFramework_demoTests */,
