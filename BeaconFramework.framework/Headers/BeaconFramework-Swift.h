@@ -217,6 +217,7 @@ SWIFT_CLASS("_TtC15BeaconFramework18IIIBeaconDetection")
 @property (nonatomic, copy) NSArray<ActiveBeacon *> * _Nullable ActiveBeaconList;
 @property (nonatomic) NSInteger BeaconCountFrequency;
 @property (nonatomic) NSInteger Hold_time;
+@property (nonatomic) NSInteger BeaconLogtime;
 @property (nonatomic, copy) NSString * _Nullable Status;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithServer_ip:(NSString * _Nonnull)server_ip key:(NSString * _Nonnull)key OBJC_DESIGNATED_INITIALIZER;
@@ -225,7 +226,7 @@ SWIFT_CLASS("_TtC15BeaconFramework18IIIBeaconDetection")
 - (void)Start;
 - (void)Start:(NSString * _Nonnull)proximity_uuid;
 - (void)Stop;
-- (void)locationManager:(CLLocationManager * _Null_unspecified)manager didRangeBeacons:(NSArray<CLBeacon *> * _Null_unspecified)beacons inRegion:(CLBeaconRegion * _Null_unspecified)region;
+- (void)locationManager:(CLLocationManager * _Nonnull)manager didRangeBeacons:(NSArray<CLBeacon *> * _Nonnull)beacons inRegion:(CLBeaconRegion * _Nonnull)region;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didEnterRegion:(CLRegion * _Nonnull)region;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didExitRegion:(CLRegion * _Nonnull)region;
 @end
