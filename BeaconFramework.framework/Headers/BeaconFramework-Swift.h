@@ -94,17 +94,29 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import ObjectiveC;
 @import Foundation;
+@import CoreLocation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
+@class NSNumber;
+
+SWIFT_CLASS("_TtC15BeaconFramework12ActiveBeacon")
+@interface ActiveBeacon : NSObject
+@property (nonatomic, copy) NSString * _Nullable id;
+@property (nonatomic, copy) NSString * _Nullable uuid;
+@property (nonatomic, copy) NSString * _Nullable major;
+@property (nonatomic, copy) NSString * _Nullable minor;
+@property (nonatomic, strong) NSNumber * _Nullable distance;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC15BeaconFramework6Beacon")
 @interface Beacon : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSNumber;
 
 SWIFT_CLASS("_TtC15BeaconFramework6Coupon")
 @interface Coupon : NSObject
@@ -118,6 +130,12 @@ SWIFT_CLASS("_TtC15BeaconFramework6Coupon")
 @property (nonatomic, copy) NSString * _Nullable photoUrl;
 @property (nonatomic, copy) NSString * _Nullable validStartDate;
 @property (nonatomic, copy) NSString * _Nullable validEndDate;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC15BeaconFramework11EncryptUUID")
+@interface EncryptUUID : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -174,6 +192,9 @@ SWIFT_CLASS("_TtC15BeaconFramework9IIIBeacon")
 @interface IIIBeacon : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)get_beacons_withkey:(NSString * _Nonnull)server_ip key:(NSString * _Nonnull)key beacon_info:(BeaconInfo * _Nonnull)beacon_info;
+- (void)get_beacons_withkey:(NSString * _Nonnull)server_ip key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(BeaconInfo * _Nonnull, BOOL))completion;
+- (void)get_beacons_withkey_security:(NSString * _Nonnull)server key:(NSString * _Nonnull)key beacon_info:(BeaconInfo * _Nonnull)beacon_info;
+- (void)get_beacons_withkey_security:(NSString * _Nonnull)server key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(BeaconInfo * _Nonnull, BOOL))completion;
 @end
 
 
@@ -184,8 +205,61 @@ SWIFT_CLASS("_TtCC15BeaconFramework9IIIBeacon10BeaconInfo")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@protocol IIIBeaconDetectionDelegate;
+@class CLLocationManager;
+@class CLBeacon;
+@class CLBeaconRegion;
+@class CLRegion;
+
+SWIFT_CLASS("_TtC15BeaconFramework18IIIBeaconDetection")
+@interface IIIBeaconDetection : NSObject <CLLocationManagerDelegate>
+@property (nonatomic, strong) id <IIIBeaconDetectionDelegate> _Nullable delegate;
+@property (nonatomic, copy) NSArray<ActiveBeacon *> * _Nullable ActiveBeaconList;
+@property (nonatomic) NSInteger BeaconCountFrequency;
+@property (nonatomic) NSInteger Hold_time;
+@property (nonatomic) NSInteger BeaconLogtime;
+@property (nonatomic, copy) NSString * _Nullable Status;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithServer_ip:(NSString * _Nonnull)server_ip key:(NSString * _Nonnull)key OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSecurity_server:(NSString * _Nonnull)security_server key:(NSString * _Nonnull)key OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithBeacon_data:(BeaconInfo * _Nonnull)beacon_data OBJC_DESIGNATED_INITIALIZER;
+- (void)Start;
+- (void)Start:(NSString * _Nonnull)proximity_uuid;
+- (void)Stop;
+- (void)locationManager:(CLLocationManager * _Nonnull)manager didRangeBeacons:(NSArray<CLBeacon *> * _Nonnull)beacons inRegion:(CLBeaconRegion * _Nonnull)region;
+- (void)locationManager:(CLLocationManager * _Nonnull)manager didEnterRegion:(CLRegion * _Nonnull)region;
+- (void)locationManager:(CLLocationManager * _Nonnull)manager didExitRegion:(CLRegion * _Nonnull)region;
+@end
+
+
+SWIFT_PROTOCOL("_TtP15BeaconFramework26IIIBeaconDetectionDelegate_")
+@protocol IIIBeaconDetectionDelegate
+- (void)BeaconDetectd;
+@end
+
+
+@interface NSData (SWIFT_EXTENSION(BeaconFramework))
+- (NSString * _Nonnull)toHexString;
+@end
+
+
+@interface NSData (SWIFT_EXTENSION(BeaconFramework))
+
+/// Two octet checksum as defined in RFC-4880. Sum of all octets, mod 65536
+- (uint16_t)checksum;
+- (NSData * _Nullable)sha1;
+- (NSData * _Nullable)sha224;
+- (NSData * _Nullable)sha256;
+- (NSData * _Nullable)sha384;
+- (NSData * _Nullable)sha512;
+@end
+
 
 @interface NSLock (SWIFT_EXTENSION(BeaconFramework))
+@end
+
+
+@interface NSMutableData (SWIFT_EXTENSION(BeaconFramework))
 @end
 
 
@@ -208,6 +282,13 @@ SWIFT_CLASS("_TtC15BeaconFramework12Notification")
 @interface Notification : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)get_push_message:(NSString * _Nonnull)server_ip major:(NSInteger)major minor:(NSInteger)minor key:(NSString * _Nonnull)key msg:(message * _Nonnull)msg;
+- (void)get_push_message:(NSString * _Nonnull)server_ip major:(NSInteger)major minor:(NSInteger)minor key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(message * _Nonnull, BOOL))completion;
+- (void)get_push_message:(NSString * _Nonnull)server_ip beacon_id:(NSString * _Nonnull)beacon_id key:(NSString * _Nonnull)key msg:(message * _Nonnull)msg;
+- (void)get_push_message:(NSString * _Nonnull)server_ip beacon_id:(NSString * _Nonnull)beacon_id key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(message * _Nonnull, BOOL))completion;
+- (void)get_push_message_security:(NSString * _Nonnull)security_server major:(NSInteger)major minor:(NSInteger)minor key:(NSString * _Nonnull)key msg:(message * _Nonnull)msg;
+- (void)get_push_message_security:(NSString * _Nonnull)security_server major:(NSInteger)major minor:(NSInteger)minor key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(message * _Nonnull, BOOL))completion;
+- (void)get_push_message_security:(NSString * _Nonnull)security_server beacon_id:(NSString * _Nonnull)beacon_id key:(NSString * _Nonnull)key msg:(message * _Nonnull)msg;
+- (void)get_push_message_security:(NSString * _Nonnull)security_server beacon_id:(NSString * _Nonnull)beacon_id key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(message * _Nonnull, BOOL))completion;
 @end
 
 @class PushContent;
@@ -233,7 +314,6 @@ SWIFT_CLASS("_TtC15BeaconFramework11PushContent")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSData;
 @class NSCoder;
 @class NSURL;
 

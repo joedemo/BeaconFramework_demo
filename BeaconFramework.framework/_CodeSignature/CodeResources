@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/BeaconFramework-Swift.h</key>
 		<data>
-		qWVHsTIeBIOfqx9AWAN4Up5/jhw=
+		xlIDMxLTmSW5EQEnJpnfNXb6A+o=
 		</data>
 		<key>Headers/BeaconFramework.h</key>
 		<data>
-		N4saRIzuVF8y60NOqMM+kRMXqwU=
+		kXAl2HhOfMgMPWt0o5ra0KvjWxM=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -18,19 +18,19 @@
 		</data>
 		<key>Modules/BeaconFramework.swiftmodule/arm.swiftdoc</key>
 		<data>
-		q5tnR2dwIv8Yx8FHT0pULBjKTxQ=
+		YEB5gLxdf5sfYJBraWic2q1Y8eA=
 		</data>
 		<key>Modules/BeaconFramework.swiftmodule/arm.swiftmodule</key>
 		<data>
-		1YYsOHn/lfJKxDfxz/AV23ayp2E=
+		09j3+LJ3KRO4q0NuqKHwyyuMH9o=
 		</data>
 		<key>Modules/BeaconFramework.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		q11XLLZQEfY3Ab6kdg7Xgsj56Rk=
+		fEBFb57QYPq+ZeKTX8DRSHerFZ4=
 		</data>
 		<key>Modules/BeaconFramework.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		DBnigLeXUGkc9S9kwIlv1lmzJZc=
+		Ney0w+Kh1gUDTAhqUysudv4DVF4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -43,66 +43,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qWVHsTIeBIOfqx9AWAN4Up5/jhw=
+			xlIDMxLTmSW5EQEnJpnfNXb6A+o=
 			</data>
 			<key>hash2</key>
 			<data>
-			1v+8MXyAQzpOYu3Sqr+4QNh/06QWGkoKqTv0Fshhkc8=
+			QqyDhAMNOvuJSFNeAg8YDyhBbMkmp85lVfFIrSGdwXQ=
 			</data>
 		</dict>
 		<key>Headers/BeaconFramework.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			N4saRIzuVF8y60NOqMM+kRMXqwU=
+			kXAl2HhOfMgMPWt0o5ra0KvjWxM=
 			</data>
 			<key>hash2</key>
 			<data>
-			0Wtxd4kkQYlcknRBYnIKG3PeX6hdbtSMAEn5zUT1oA0=
+			dW0mj+/RRfvqRkq8n2LiSaSk/iDY8D3NTojZ1WuT/Fg=
 			</data>
 		</dict>
 		<key>Modules/BeaconFramework.swiftmodule/arm.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			q5tnR2dwIv8Yx8FHT0pULBjKTxQ=
+			YEB5gLxdf5sfYJBraWic2q1Y8eA=
 			</data>
 			<key>hash2</key>
 			<data>
-			SY4ty1QGYnGsu4f+Rcuk86U7Bqaw/Xqw3ZXhJYNqduQ=
+			zPqPu+DdAGKTFesKVg6Nmkq+zcbrKKQWVXbZdpboqnM=
 			</data>
 		</dict>
 		<key>Modules/BeaconFramework.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1YYsOHn/lfJKxDfxz/AV23ayp2E=
+			09j3+LJ3KRO4q0NuqKHwyyuMH9o=
 			</data>
 			<key>hash2</key>
 			<data>
-			aVaVhifYVYF2uJGVu5x5gLutt1CCWtEasZvxLrWpTKE=
+			qXQKzFQ0Ug7WR8Qv4mohcITy6qLA623UdUEhWfJH1+Y=
 			</data>
 		</dict>
 		<key>Modules/BeaconFramework.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			q11XLLZQEfY3Ab6kdg7Xgsj56Rk=
+			fEBFb57QYPq+ZeKTX8DRSHerFZ4=
 			</data>
 			<key>hash2</key>
 			<data>
-			nGSPr3b4EtkKr9HUwos6ZPO8vkVqDaRK09NEjO2aI+U=
+			XPO/P3aU8uLRaUqYV8G96EN6+1QkwoKNYE1xu/Ru0jU=
 			</data>
 		</dict>
 		<key>Modules/BeaconFramework.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DBnigLeXUGkc9S9kwIlv1lmzJZc=
+			Ney0w+Kh1gUDTAhqUysudv4DVF4=
 			</data>
 			<key>hash2</key>
 			<data>
-			CLOHqVfpYq/LDdl9jW2ghcFlFEuwPDQQN9DSuvQf5g4=
+			GQt8Eci6FGJOB9+V9DkZDhYBl0Nb2FTc2lJjcQg2a7I=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
