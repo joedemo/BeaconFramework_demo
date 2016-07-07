@@ -303,6 +303,18 @@ SWIFT_CLASS("_TtCC15BeaconFramework12Notification7message")
 
 SWIFT_CLASS("_TtC15BeaconFramework7Product")
 @interface Product : NSObject
+@property (nonatomic, copy) NSString * _Nullable sellerName;
+@property (nonatomic, copy) NSString * _Nullable sellerDescription;
+@property (nonatomic, copy) NSString * _Nullable productBriefDescription;
+@property (nonatomic, copy) NSString * _Nullable productDetailDescription;
+@property (nonatomic, strong) NSNumber * _Nullable originPrice;
+@property (nonatomic, strong) NSNumber * _Nullable discount;
+@property (nonatomic, copy) NSString * _Nullable others;
+@property (nonatomic, strong) NSNumber * _Nullable quantity;
+@property (nonatomic, strong) NSNumber * _Nullable surplus;
+@property (nonatomic, copy) NSString * _Nullable photoUrl;
+@property (nonatomic, copy) NSString * _Nullable validStartDate;
+@property (nonatomic, copy) NSString * _Nullable validEndDate;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
