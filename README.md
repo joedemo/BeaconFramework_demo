@@ -36,7 +36,7 @@ Same as Swift, But you must set Embedded Content Contains Swift Code to "Yes" in
   Build and run the BeaconFramework_demo.xcodeproj in Xcode
 
 ####Object-C:
-- IIIBeaconDetect(object-c) branch
+- IIIBeaconDetect(obj-c) branch
 
   Build and run the BeaconFramework_demo(object-c) in Xcode
 
