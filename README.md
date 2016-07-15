@@ -1,5 +1,5 @@
 # iOS Beacon Notification SDK
-III Beacon List and Notification Information
+III Beacon Detect and Notification Information
 
 ##Installation
 Import the BeaconFramework.framework file
@@ -8,100 +8,42 @@ Import the BeaconFramework.framework file
 #####Setp1:
 Add the BeaconFramework.framework file to xcode project
 
-![image](https://raw.githubusercontent.com/joehour/BeaconFramework_demo/master/BeaconFramework_demo/image1.png)
+![image](https://raw.githubusercontent.com/joedemo/BeaconFramework_demo/master/BeaconFramework_demo/image1.png)
 
 #####Setp2:
 Add the BeaconFramework.framework to Embedded Binaries
 
-![image](https://raw.githubusercontent.com/joehour/BeaconFramework_demo/master/BeaconFramework_demo/image2.png)
+![image](https://raw.githubusercontent.com/joedemo/BeaconFramework_demo/master/BeaconFramework_demo/image2.png)
 
 #####Object-C
 Same as Swift, But you must set Embedded Content Contains Swift Code to "Yes" in Build Settings
 
-![image](https://raw.githubusercontent.com/joehour/BeaconFramework_demo/master/BeaconFramework_demo/image3.png)
+![image](https://raw.githubusercontent.com/joedemo/BeaconFramework_demo/master/BeaconFramework_demo/image3.png)
 
 ##Examples
-####Swift:
-
-    
-    //Initial BeaconFramework
-    var notification = Notification()
-    var iiibeacon = IIIBeacon()
-    
-    
-    //建立Beacon內容物件
-    var _beacon_info:IIIBeacon.BeaconInfo = IIIBeacon.BeaconInfo()
-
-    
-    //建立推播內容物件
-    var _message:Notification.message = Notification.message()
-   
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
-        
-
-        //取得對應Beacon清單
-        iiibeacon.get_beacons_withkey("server ip", key: "app key", beacon_info: _beacon_info)
-        
-        //取得Beacon對應推播內容
-        notification.get_push_message("server ip", major: 99999, minor: 99999, key: "app key", msg: _message)
-        
-        
-        //建立timer用以驗證是否取得資料（資料將會自動傳回至對應變數）
-        NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("update:"), userInfo: nil, repeats: true)
-        
-
-        return true
-    }
-    
-    //驗證資料
-    func update(timer: NSTimer) {
-        
-        if(_message.state == "Sucess" && _beacon_info.state == "Sucess")
-        {
-            print("已取得資料")
-            timer.invalidate()
-            
-        }
-        
-        
-    }
-    
-
 ####Object-C:
-
-    //Initial BeaconFramework
-    _notification = [Notification new] ;
-    _iiibeacon = [IIIBeacon new];
-    
-    //建立推播內容物件
-    _msg = [message new] ;
-    
-    //建立Beacon內容物件
-    _beacon_info = [BeaconInfo new] ;
-    
-    
-    //取得對應Beacon清單
-    [_iiibeacon get_beacons_withkey:@"server ip" key: @"app key" beacon_info: _beacon_info];
-    
-    //取得Beacon對應推播內容
-    [_notification get_push_message:@"server ip" major:999999 minor:999999 key:@"app key" msg:_msg];
+   Please Check out the sample code    
     
 
 ##Requirements
-- Xcode 7.2 or higher
+- Xcode 7.3 or higher
 - iOS 8.0 or higher
 
 ##Demo
 ####Swift:
-- master branch
+- IIIBeaconDetect branch
 
   Build and run the BeaconFramework_demo.xcodeproj in Xcode
 
 ####Object-C:
-- Object-C branch
+- IIIBeaconDetect(object-c) branch
 
-  Build and run the BeaconFramework_demo(object-c).xcodeproj in Xcode
+  Build and run the BeaconFramework_demo(object-c) in Xcode
+
+####Object-C(iOS7.0):
+- IIIBeaconDetect(iOS7.0) branch
+
+  Build and run the IIIBeaconDetect(iOS7.0) in Xcode
 
 ##iOS 9 App Transport Security issue
 
@@ -113,6 +55,18 @@ Here’s how to disable this issue. Open Info.plist, and add the following lines
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+
+##iOS beacon detect setting
+
+Apparently in iOS 8 SDK, requestAlwaysAuthorization (for background location) or requestWhenInUseAuthorization (location only when foreground) call on CLLocationManager is needed before starting location updates.
+
+There also needs to be NSLocationAlwaysUsageDescription or NSLocationWhenInUseUsageDescription key in Info.plist with a message to be displayed in the prompt. Open Info.plist, and add the following lines~
+
+    <key>NSLocationWhenInUseUsageDescription</key>
+	   <string>demo</string>
+         <key>NSLocationAlwaysUsageDescription</key>
+	        <string>demo</string>
+
 
 ##License
 BeaconFramework_demo is available under the Apache v2 License.

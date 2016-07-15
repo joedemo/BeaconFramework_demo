@@ -11,36 +11,61 @@
 
 
 
-@interface AppDelegate ()
+@interface AppDelegate ()<IIIBeaconDetectionDelegate>
 
 @end
 
+//建立推播內容清單資料結構
+@interface _Message: NSObject
+{
+  @public
+    message *msg;
+    NSString *uuid;
+}
+@end
+@implementation _Message
+
+@end
 
 @implementation AppDelegate
-
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
     //Initial BeaconFramework
-    _notification = [Notification new] ;
+     _notification = [Notification new] ;
     _iiibeacon = [IIIBeacon new];
+    _detection = [IIIBeaconDetection new];
     
-    //建立推播內容物件
-    _msg = [message new] ;
-    
-    //建立Beacon內容物件
-    _beacon_info = [BeaconInfo new] ;
-    
-    
-    //取得對應Beacon清單
-    [_iiibeacon get_beacons_withkey:@"52.69.184.56" key: @"82c3b9ef2cd4a09575921e2ce05013002bb7b38e" beacon_info: _beacon_info];
-    
-    //取得Beacon對應推播內容
-    [_notification get_push_message:@"52.69.184.56" major:777 minor:80 key:@"82c3b9ef2cd4a09575921e2ce05013002bb7b38e" msg:_msg];
-    
+
     //建立timer用以驗證是否取得資料（資料將會自動傳回至對應變數）
      _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(update) userInfo:nil repeats:YES];
+    
+    
+    //IIIBeaconDetection
+    //Production Environment ( If Test Environment, Please use get_beacons_withkey:@"52.69.184.56" key: @"app key" ... )
+    [_iiibeacon get_beacons_withkey_security:@"ideas.iiibeacon.net" key: @"app key" completion: ^(BeaconInfo *item , BOOL Sucess) {
+        if (Sucess) {
+            //app key對應beacon取得成功
+            dispatch_async(dispatch_get_main_queue(), ^{
+                
+                //Initial Detection
+                _detection = [[IIIBeaconDetection alloc] initWithBeacon_data:item];
+                
+                 //委派 IIIBeaconDetection 給 AppDelegate
+                _detection.delegate = self;
+                
+                 //開始偵測
+                [_detection Start];
+            });
+        }
+    }
+     
+     ];
+    
+
+
+    _message_list = [NSMutableArray new];
     
     return YES;
 }
@@ -49,16 +74,60 @@
 - (void) update
 {
     
-    if ( [_msg.state  isEqual: @"Sucess" ] && [_beacon_info.state isEqual:  @"Sucess"] ) {
+    if(_message_list.count > 0 )
+    {
         
-    
-        NSLog(@"已取得資料");
-        _timer.invalidate;
+        for (_Message *item in _message_list) {
+            if ([item->msg.state isEqual: @"Sucess"]) {
+                
+
+                [_timer invalidate];
+                
+                break;
+            }
+        }
+        
     }
 }
 
-
-
+////找到對應Beacon (required!!)
+-(void)BeaconDetectd{
+    if (_detection.ActiveBeaconList.count > 0) {
+        for (ActiveBeacon* key in _detection.ActiveBeaconList) {
+            
+            BOOL found = NO;
+            for (_Message *item in _message_list) {
+                if ([item->uuid isEqualToString:key.uuid]) {
+                    found = YES;
+                }
+            }
+            
+            if (!found) {
+                
+                //建立推播內容物件
+                _Message *message_item = [_Message new];
+                message_item->msg = [message new];
+                message_item->uuid = key.uuid;
+    
+                //取得Beacon對應推播內容
+                 //Production Environment ( If Test Environment, Please use get_push_message:@"52.69.184.56" .... )
+                [_notification get_push_message_security:@"ideas.iiibeacon.net" major:key.major.intValue minor:key.minor.intValue key:@"app key" completion:^(message *item, BOOL Sucess){
+                    if (Sucess) {
+                        //資料回傳成功
+                        NSLog(@"%@", item.content.coupons[0].photoUrl);
+                    }
+                }];
+                
+                
+                [_message_list addObject:message_item];
+            
+            
+            }
+        }
+        
+        
+    }
+}
 
 
 
