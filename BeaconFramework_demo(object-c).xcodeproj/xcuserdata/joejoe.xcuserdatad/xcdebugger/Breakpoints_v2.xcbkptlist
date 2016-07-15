@@ -490,12 +490,12 @@
                   moduleName = "BeaconFramework_demo(object-c)"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/joejoe/Documents/Project/BeaconFramework_demo-IIIBeaconDetect-object-c-static/beacon_test/AppDelegate.m"
-                  timestampString = "490258589.077552"
+                  timestampString = "490300212.791136"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "97"
                   endingLineNumber = "97"
-                  offsetFromSymbolStart = "52">
+                  offsetFromSymbolStart = "56">
                </Location>
                <Location
                   shouldBeEnabled = "No"
@@ -505,12 +505,12 @@
                   moduleName = "BeaconFramework_demo(object-c)"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/joejoe/Documents/Project/BeaconFramework_demo-IIIBeaconDetect-object-c-static/beacon_test/AppDelegate.m"
-                  timestampString = "490258589.07771"
+                  timestampString = "490300212.791293"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "97"
                   endingLineNumber = "97"
-                  offsetFromSymbolStart = "120">
+                  offsetFromSymbolStart = "124">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -529,6 +529,54 @@
             endingLineNumber = "117"
             landmarkName = "-BeaconDetectd"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "beacon_test/AppDelegate.m"
+            timestampString = "490300263.236326"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "-update"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[AppDelegate update]"
+                  moduleName = "BeaconFramework_demo(object-c)"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joejoe/Documents/Project/BeaconFramework_demo-IIIBeaconDetect-object-c-static/beacon_test/AppDelegate.m"
+                  timestampString = "490300263.250444"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[AppDelegate update]"
+                  moduleName = "BeaconFramework_demo(object-c)"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joejoe/Documents/Project/BeaconFramework_demo-IIIBeaconDetect-object-c-static/beacon_test/AppDelegate.m"
+                  timestampString = "490300263.250587"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
