@@ -4,21 +4,11 @@ III Beacon Detect and Notification Information
 ##Installation
 Import the BeaconFramework.framework file
 
-####Swift:
-#####Setp1:
+####Object-C:
+#####
 Add the BeaconFramework.framework file to xcode project
 
 ![image](https://raw.githubusercontent.com/joedemo/BeaconFramework_demo/master/BeaconFramework_demo/image1.png)
-
-#####Setp2:
-Add the BeaconFramework.framework to Embedded Binaries
-
-![image](https://raw.githubusercontent.com/joedemo/BeaconFramework_demo/master/BeaconFramework_demo/image2.png)
-
-#####Object-C
-Same as Swift, But you must set Embedded Content Contains Swift Code to "Yes" in Build Settings
-
-![image](https://raw.githubusercontent.com/joedemo/BeaconFramework_demo/master/BeaconFramework_demo/image3.png)
 
 ##Examples
 ####Object-C:
@@ -27,7 +17,7 @@ Same as Swift, But you must set Embedded Content Contains Swift Code to "Yes" in
 
 ##Requirements
 - Xcode 7.3 or higher
-- iOS 8.0 or higher
+- iOS 7.0 or higher
 
 ##Demo
 ####Swift:
@@ -36,6 +26,11 @@ Same as Swift, But you must set Embedded Content Contains Swift Code to "Yes" in
   Build and run the BeaconFramework_demo.xcodeproj in Xcode
 
 ####Object-C:
+- IIIBeaconDetect(object-c) branch
+
+  Build and run the BeaconFramework_demo(object-c) in Xcode
+
+####IIIBeaconDetect(iOS7.0):
 - IIIBeaconDetect(object-c) branch
 
   Build and run the BeaconFramework_demo(object-c) in Xcode
