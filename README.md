@@ -10,7 +10,7 @@ Add the BeaconFramework.framework file to xcode project
 
 ##Examples
 ####Object-C:
-   Please Check out the sample code    
+   Please Check out the sample code
     
 
 ##Requirements
