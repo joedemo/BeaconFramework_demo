@@ -8,8 +8,6 @@ Import the BeaconFramework.framework file
 #####
 Add the BeaconFramework.framework file to xcode project
 
-![image](https://raw.githubusercontent.com/joedemo/BeaconFramework_demo/master/BeaconFramework_demo/image1.png)
-
 ##Examples
 ####Object-C:
    Please Check out the sample code    
