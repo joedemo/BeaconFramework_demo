@@ -15,6 +15,8 @@
 
 @class PushContent;
 @interface Coupon : NSObject
+@property (nonatomic, copy) NSString * _Nullable templateName;
+@property (nonatomic, copy) NSString * _Nullable templateDescription;
 @property (nonatomic, copy) NSString * _Nullable sellerName;
 @property (nonatomic, copy) NSString * _Nullable sellerDescription;
 @property (nonatomic, copy) NSString * _Nullable couponBriefDescription;
@@ -29,6 +31,8 @@
 
 
 @interface Product : NSObject
+@property (nonatomic, copy) NSString * _Nullable templateName;
+@property (nonatomic, copy) NSString * _Nullable templateDescription;
 @property (nonatomic, copy) NSString * _Nullable sellerName;
 @property (nonatomic, copy) NSString * _Nullable sellerDescription;
 @property (nonatomic, copy) NSString * _Nullable productBriefDescription;
@@ -48,3 +52,7 @@
 @property (nonatomic, retain) NSMutableArray * _Nonnull coupons;
 @property (nonatomic, retain) NSMutableArray * _Nonnull products;
 @end
+
+
+
+
