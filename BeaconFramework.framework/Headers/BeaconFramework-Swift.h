@@ -117,6 +117,8 @@ SWIFT_CLASS("_TtC15BeaconFramework6Beacon")
 
 SWIFT_CLASS("_TtC15BeaconFramework6Coupon")
 @interface Coupon : NSObject
+@property (nonatomic, copy) NSString * _Nullable templateName;
+@property (nonatomic, copy) NSString * _Nullable templateDescription;
 @property (nonatomic, copy) NSString * _Nullable sellerName;
 @property (nonatomic, copy) NSString * _Nullable sellerDescription;
 @property (nonatomic, copy) NSString * _Nullable couponBriefDescription;
@@ -296,6 +298,8 @@ SWIFT_CLASS("_TtCC15BeaconFramework12Notification7message")
 
 SWIFT_CLASS("_TtC15BeaconFramework7Product")
 @interface Product : NSObject
+@property (nonatomic, copy) NSString * _Nullable templateName;
+@property (nonatomic, copy) NSString * _Nullable templateDescription;
 @property (nonatomic, copy) NSString * _Nullable sellerName;
 @property (nonatomic, copy) NSString * _Nullable sellerDescription;
 @property (nonatomic, copy) NSString * _Nullable productBriefDescription;
