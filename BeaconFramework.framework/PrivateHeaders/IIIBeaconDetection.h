@@ -55,6 +55,7 @@
 @property (nonatomic) NSInteger BeaconLogtime;
 @property (nonatomic, copy) NSString * _Nullable Status;
 @property (strong, nonatomic) CLLocationManager * _Nullable locationManager;
+@property (nonatomic, retain) dispatch_queue_t detectQueue;
 
 //- (nonnull instancetype)init ;
 //- (nonnull instancetype)initWithServer_ip:(NSString * _Nonnull)server_ip key:(NSString * _Nonnull)key;

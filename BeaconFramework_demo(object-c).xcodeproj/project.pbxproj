@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B45F9D7B1D51F95700903AC6 /* BeaconFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B45F9D7A1D51F95700903AC6 /* BeaconFramework.framework */; };
+		B45F9D7D1D5209CE00903AC6 /* BeaconFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B45F9D7C1D5209CE00903AC6 /* BeaconFramework.framework */; };
 		B4FC7ECE1CB4B6050083F64A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4FC7ECD1CB4B6050083F64A /* main.m */; };
 		B4FC7ED11CB4B6050083F64A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4FC7ED01CB4B6050083F64A /* AppDelegate.m */; };
 		B4FC7ED41CB4B6050083F64A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4FC7ED31CB4B6050083F64A /* ViewController.m */; };
@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B45F9D7A1D51F95700903AC6 /* BeaconFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BeaconFramework.framework; sourceTree = "<group>"; };
+		B45F9D7C1D5209CE00903AC6 /* BeaconFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BeaconFramework.framework; sourceTree = "<group>"; };
 		B4FC7EC91CB4B6050083F64A /* BeaconFramework_demo(object-c).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BeaconFramework_demo(object-c).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4FC7ECD1CB4B6050083F64A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B4FC7ECF1CB4B6050083F64A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -35,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B45F9D7B1D51F95700903AC6 /* BeaconFramework.framework in Frameworks */,
+				B45F9D7D1D5209CE00903AC6 /* BeaconFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +45,7 @@
 		B4FC7EC01CB4B6040083F64A = {
 			isa = PBXGroup;
 			children = (
-				B45F9D7A1D51F95700903AC6 /* BeaconFramework.framework */,
+				B45F9D7C1D5209CE00903AC6 /* BeaconFramework.framework */,
 				B4FC7ECB1CB4B6050083F64A /* beacon_test */,
 				B4FC7ECA1CB4B6050083F64A /* Products */,
 			);
