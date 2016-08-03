@@ -104,9 +104,6 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 SWIFT_CLASS("_TtC15BeaconFramework12ActiveBeacon")
 @interface ActiveBeacon : NSObject
 @property (nonatomic, copy) NSString * _Nullable id;
-@property (nonatomic, copy) NSString * _Nullable uuid;
-@property (nonatomic, copy) NSString * _Nullable major;
-@property (nonatomic, copy) NSString * _Nullable minor;
 @property (nonatomic, strong) NSNumber * _Nullable distance;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -195,12 +192,12 @@ SWIFT_CLASS("_TtC15BeaconFramework9IIIBeacon")
 - (void)get_beacons_withkey:(NSString * _Nonnull)server_ip key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(BeaconInfo * _Nonnull, BOOL))completion;
 - (void)get_beacons_withkey_security:(NSString * _Nonnull)server key:(NSString * _Nonnull)key beacon_info:(BeaconInfo * _Nonnull)beacon_info;
 - (void)get_beacons_withkey_security:(NSString * _Nonnull)server key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(BeaconInfo * _Nonnull, BOOL))completion;
+- (void)setLogAccount:(NSString * _Nonnull)account;
 @end
 
 
 SWIFT_CLASS("_TtCC15BeaconFramework9IIIBeacon10BeaconInfo")
 @interface BeaconInfo : NSObject
-@property (nonatomic, copy) NSArray<Beacon *> * _Nullable BeaconList;
 @property (nonatomic, copy) NSString * _Nullable state;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -281,12 +278,8 @@ SWIFT_PROTOCOL("_TtP15BeaconFramework26IIIBeaconDetectionDelegate_")
 SWIFT_CLASS("_TtC15BeaconFramework12Notification")
 @interface Notification : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (void)get_push_message:(NSString * _Nonnull)server_ip major:(NSInteger)major minor:(NSInteger)minor key:(NSString * _Nonnull)key msg:(message * _Nonnull)msg;
-- (void)get_push_message:(NSString * _Nonnull)server_ip major:(NSInteger)major minor:(NSInteger)minor key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(message * _Nonnull, BOOL))completion;
 - (void)get_push_message:(NSString * _Nonnull)server_ip beacon_id:(NSString * _Nonnull)beacon_id key:(NSString * _Nonnull)key msg:(message * _Nonnull)msg;
 - (void)get_push_message:(NSString * _Nonnull)server_ip beacon_id:(NSString * _Nonnull)beacon_id key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(message * _Nonnull, BOOL))completion;
-- (void)get_push_message_security:(NSString * _Nonnull)security_server major:(NSInteger)major minor:(NSInteger)minor key:(NSString * _Nonnull)key msg:(message * _Nonnull)msg;
-- (void)get_push_message_security:(NSString * _Nonnull)security_server major:(NSInteger)major minor:(NSInteger)minor key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(message * _Nonnull, BOOL))completion;
 - (void)get_push_message_security:(NSString * _Nonnull)security_server beacon_id:(NSString * _Nonnull)beacon_id key:(NSString * _Nonnull)key msg:(message * _Nonnull)msg;
 - (void)get_push_message_security:(NSString * _Nonnull)security_server beacon_id:(NSString * _Nonnull)beacon_id key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(message * _Nonnull, BOOL))completion;
 @end

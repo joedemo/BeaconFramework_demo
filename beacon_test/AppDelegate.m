@@ -97,7 +97,7 @@
             
             BOOL found = NO;
             for (_Message *item in _message_list) {
-                if ([item->uuid isEqualToString:key.uuid]) {
+                if ([item->uuid isEqualToString:key.id]) {
                     found = YES;
                 }
             }
@@ -107,14 +107,17 @@
                 //建立推播內容物件
                 _Message *message_item = [_Message new];
                 message_item->msg = [message new];
-                message_item->uuid = key.uuid;
+                message_item->uuid = key.id;
     
                 //取得Beacon對應推播內容
                  //Production Environment ( If Test Environment, Please use get_push_message:@"52.69.184.56" .... )
-                [_notification get_push_message_security:@"ideas.iiibeacon.net" major:key.major.intValue minor:key.minor.intValue key:@"app key" completion:^(message *item, BOOL Sucess){
+                [_notification get_push_message_security:@"ideas.iiibeacon.net" beacon_id:key.id key:@"app key" completion:^(message *item, BOOL Sucess){
                     if (Sucess) {
                         //資料回傳成功
-                        NSLog(@"%@", item.content.coupons[0].photoUrl);
+                        if (item.content.coupons.count > 0) {
+                             NSLog(@"%@", item.content.coupons[0].photoUrl);
+                        }
+                       
                     }
                 }];
                 
