@@ -22,7 +22,7 @@
 }
 - (void)get_beacons_withkey:(NSString * _Nonnull)server_ip key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(BeaconInfo * _Nonnull, BOOL))completion;
 - (void)get_beacons_withkey_security:(NSString * _Nonnull)server key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(BeaconInfo * _Nonnull, BOOL))completion;
-
+-(void) setLogAccount: (NSString *) account;
 
 @end
 
@@ -47,17 +47,21 @@
 @property (nonatomic, copy) NSNumber * _Nullable major;
 @property (nonatomic, copy) NSNumber * _Nullable minor;
 
-@property (nonatomic, copy) NSString * _Nullable name;
-@property (nonatomic, copy) NSString * _Nullable address;
+//@property (nonatomic, copy) NSString * _Nullable name;
+//@property (nonatomic, copy) NSString * _Nullable address;
 
-@property (nonatomic, copy) NSNumber * _Nullable latitude;
-@property (nonatomic, copy) NSNumber * _Nullable longitude;
+//@property (nonatomic, copy) NSNumber * _Nullable latitude;
+//@property (nonatomic, copy) NSNumber * _Nullable longitude;
 @property (nonatomic, copy) NSNumber * _Nullable power;
 
 @end
 
+extern NSString *device_id;
+extern NSString *device_account;
 
 
+extern NSString *sdk_version;
+extern NSString *sdk_release_time;
 
 
 

@@ -32,8 +32,8 @@
 @interface ActiveBeacon : NSObject
 @property (nonatomic, copy) NSString * _Nullable id;
 @property (nonatomic, copy) NSString * _Nullable uuid;
-@property (nonatomic, copy) NSString * _Nullable major;
-@property (nonatomic, copy) NSString * _Nullable minor;
+//@property (nonatomic, copy) NSString * _Nullable major;
+//@property (nonatomic, copy) NSString * _Nullable minor;
 @property (nonatomic, strong) NSNumber * _Nullable distance;
 @end
 
