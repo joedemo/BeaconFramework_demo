@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/BeaconFramework.swiftmodule/arm.swiftmodule</key>
 		<data>
-		fFDiXtCfVyRMs+xtAVOnYOJU4eU=
+		TUezr0bxEbyZrnayf+Ek98wPWb0=
 		</data>
 		<key>Modules/BeaconFramework.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/BeaconFramework.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		ArtaDkG7uU2z/2r3yoctO55mq/8=
+		EC+nJvf9Dx+VXtprjECTv37AEY4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -76,11 +76,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fFDiXtCfVyRMs+xtAVOnYOJU4eU=
+			TUezr0bxEbyZrnayf+Ek98wPWb0=
 			</data>
 			<key>hash2</key>
 			<data>
-			pI2wSgEdBBPmcmtzb3tTivTgiGTJWj+a5yPkUQKyaWE=
+			dUZ3Ov8JIV0nMt+x+iYHHyHtiRtmdfVmG5CcsCxtdS0=
 			</data>
 		</dict>
 		<key>Modules/BeaconFramework.swiftmodule/arm64.swiftdoc</key>
@@ -98,11 +98,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ArtaDkG7uU2z/2r3yoctO55mq/8=
+			EC+nJvf9Dx+VXtprjECTv37AEY4=
 			</data>
 			<key>hash2</key>
 			<data>
-			LLww0nh15f9m17TL6bPLp8r4dx7b9cynETBqe28zgEs=
+			T2GlQnLMytTIofEIg3mNnlLEoo2Y54xo8m17oAeh+nI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
