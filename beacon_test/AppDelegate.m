@@ -39,7 +39,7 @@
     
 
     //建立timer用以驗證是否取得資料（資料將會自動傳回至對應變數）
-     _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(update) userInfo:nil repeats:YES];
+    // _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(update) userInfo:nil repeats:YES];
     
     
     //IIIBeaconDetection
@@ -93,38 +93,48 @@
 
 ////找到對應Beacon (required!!)
 -(void)BeaconDetectd{
+
+    
+    
     if (_detection.ActiveBeaconList.count > 0) {
         for (ActiveBeacon* key in _detection.ActiveBeaconList) {
-            
+             NSLog(@"%@", key.id);
             
             BOOL found = NO;
-            for (_Message *item in _message_list) {
-                if ([item->uuid isEqualToString:key.id]) {
-                    found = YES;
-                }
+            NSLock *arrayLock = [[NSLock alloc] init];
+            [arrayLock lock];
+            NSPredicate *predicate = [NSPredicate predicateWithFormat:@"uuid == %@", key.id];
+            NSArray *filtered = [_message_list filteredArrayUsingPredicate:predicate];
+            if ([filtered count] > 0) {
+                found = true;
+                
             }
-            
+            [arrayLock unlock];
             if (!found) {
                 
                 //建立推播內容物件
                 _Message *message_item = [_Message new];
                 message_item->msg = [message new];
                 message_item->uuid = key.id;
-    
-                //取得Beacon對應推播內容
-                 //Production Environment ( If Test Environment, Please use get_push_message:@"52.69.184.56" .... )
+
+//                //取得Beacon對應推播內容
+//                 //Production Environment ( If Test Environment, Please use get_push_message:@"52.69.184.56" .... )
                 [_notification get_push_message_security:@"ideas.iiibeacon.net" beacon_id: key.id key:@"app key" completion:^(message *item, BOOL Sucess){
                     if (Sucess) {
                         //資料回傳成功
-                        NSLog(@"%@", [item.content.coupons[0] photoUrl]);
+                        if (item.content.coupons.count > 0) {
+                            NSLog(@"%@", [item.content.coupons[0] photoUrl]);
+                        }
+                        
                     }
                 }];
-                
-                
+             
                 [_message_list addObject:message_item];
             
             
             }
+            
+             
         }
         
         
