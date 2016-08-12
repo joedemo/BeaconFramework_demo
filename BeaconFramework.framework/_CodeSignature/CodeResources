@@ -4,10 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		Nlwgk82HYoXSPDG7ydkZVsVNH9k=
-		</data>
 		<key>Info.plist</key>
 		<data>
 		ec98xGpYvvJg7W3N+iqCTtej6po=
@@ -18,23 +14,27 @@
 		</data>
 		<key>PrivateHeaders/BeaconFramework.h</key>
 		<data>
-		QF1TTc8uQm/nQnCpmyObCgTx0NQ=
+		OFgrSLtGQ1wiRhhKUVWQoFijfj8=
 		</data>
 		<key>PrivateHeaders/Global.h</key>
 		<data>
-		s4L5MScEUJIZ3LdQCV5oN9Rgwb8=
+		7oYzx/aL9kR5H9GWXq4cHkMCPCk=
 		</data>
 		<key>PrivateHeaders/IIIBeacon.h</key>
 		<data>
-		ZGTmklbsUoZ99M29P/N2pGsZ+6U=
+		qxrwHPklS6RHcmm8ndax5rQZ+/A=
 		</data>
 		<key>PrivateHeaders/IIIBeaconDetection.h</key>
 		<data>
-		NKdxh/csKI+o4fyBniWMi5sD14U=
+		TC8ROeN3h6XIgpLrq5v0A3p46+E=
+		</data>
+		<key>PrivateHeaders/Manager.h</key>
+		<data>
+		XFUlxWbhqBHgg11JqQVVbOBmGa0=
 		</data>
 		<key>PrivateHeaders/Notification.h</key>
 		<data>
-		Dcdt+V/C3sr4LDae74fQ0EcEQ8k=
+		s/T9TwHWQ+VsIkUEK2z00wLYY30=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -54,55 +54,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QF1TTc8uQm/nQnCpmyObCgTx0NQ=
+			OFgrSLtGQ1wiRhhKUVWQoFijfj8=
 			</data>
 			<key>hash2</key>
 			<data>
-			EJrmm+O2iXdkLgdatl5OOyGTHC8jvck275LBb7rIy6k=
+			zznbzbQECTkWRULeWtha0CYVh02VKs8Lof/fyV9wgG0=
 			</data>
 		</dict>
 		<key>PrivateHeaders/Global.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			s4L5MScEUJIZ3LdQCV5oN9Rgwb8=
+			7oYzx/aL9kR5H9GWXq4cHkMCPCk=
 			</data>
 			<key>hash2</key>
 			<data>
-			sCoYq2gy6RQXHW+RCLTi1kUQok8sLDTRFm9NQoO/OF8=
+			2PYDjGcG+p3TAHlxtNNRcgDxKKSD1VtdFLwkvLjRLrg=
 			</data>
 		</dict>
 		<key>PrivateHeaders/IIIBeacon.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZGTmklbsUoZ99M29P/N2pGsZ+6U=
+			qxrwHPklS6RHcmm8ndax5rQZ+/A=
 			</data>
 			<key>hash2</key>
 			<data>
-			FdrZpkqitZc1YGh0RuJvw8JyWCpTWtfFXxRXKLBU9Cg=
+			uWugJ1jjeqkDZjSX2l+p9y/86U7D4pNPWM6xGBqcvxE=
 			</data>
 		</dict>
 		<key>PrivateHeaders/IIIBeaconDetection.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NKdxh/csKI+o4fyBniWMi5sD14U=
+			TC8ROeN3h6XIgpLrq5v0A3p46+E=
 			</data>
 			<key>hash2</key>
 			<data>
-			rsp8NjMfwAhgImQSTARelAkO0f0ssGQNQNmMtJPOSmI=
+			IloyS+EPGn6vKIYxXrouOyBNKzOFVU0GNu99rXiqyQ8=
+			</data>
+		</dict>
+		<key>PrivateHeaders/Manager.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XFUlxWbhqBHgg11JqQVVbOBmGa0=
+			</data>
+			<key>hash2</key>
+			<data>
+			LJ7zl4ZNBCu55kfogeFBsjhA4kuRwXr4gAfWymfOHT8=
 			</data>
 		</dict>
 		<key>PrivateHeaders/Notification.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Dcdt+V/C3sr4LDae74fQ0EcEQ8k=
+			s/T9TwHWQ+VsIkUEK2z00wLYY30=
 			</data>
 			<key>hash2</key>
 			<data>
-			qkYIFsIs9pjyBwtLOYwxK29dToPxrLdVgnKGq6FMsWs=
+			hypotMPYOuqT9BiBPqdPZAY0JJmFIL4RVLiMXzU8eYs=
 			</data>
 		</dict>
 	</dict>

@@ -30,32 +30,32 @@
 @end
 
 @interface ActiveBeacon : NSObject
-@property (nonatomic, copy) NSString * _Nullable id;
-@property (nonatomic, copy) NSString * _Nullable uuid;
-//@property (nonatomic, copy) NSString * _Nullable major;
-//@property (nonatomic, copy) NSString * _Nullable minor;
-@property (nonatomic, strong) NSNumber * _Nullable distance;
+@property (atomic, weak) NSString * _Nullable id;
+@property (atomic, weak) NSString * _Nullable uuid;
+@property (atomic, weak) NSString * _Nullable major;
+@property (atomic, weak) NSString * _Nullable minor;
+@property (atomic, weak) NSNumber * _Nullable distance;
 @end
 
 @interface EncryptUUID : NSObject
-@property (nonatomic, copy) NSString * _Nullable uuid;
-@property (nonatomic, copy) NSString * _Nullable key;
+@property (atomic, weak) NSString * _Nullable uuid;
+@property (atomic, weak) NSString * _Nullable key;
 @end
 
 @class BeaconInfo;
 @interface IIIBeaconDetection : NSObject <CLLocationManagerDelegate>
 
-@property (nonatomic, strong) id <IIIBeaconDetectionDelegate> _Nullable delegate;
-@property (nonatomic, retain) NSMutableArray * _Nullable ActiveBeaconList;
-@property (nonatomic, retain) NSMutableArray * _Nullable HistoryBeaconList;
+@property (atomic, weak) id <IIIBeaconDetectionDelegate> _Nullable delegate;
+@property (atomic, strong) NSMutableArray * _Nullable ActiveBeaconList;
+@property (atomic, strong) NSMutableArray * _Nullable HistoryBeaconList;
 //@property (nonatomic, retain) NSMutableArray * _Nullable uuid_list;
-@property (nonatomic, retain) NSMutableArray * _Nullable region_list;
-@property (nonatomic) NSInteger BeaconCountFrequency;
-@property (nonatomic) NSInteger Hold_time;
-@property (nonatomic) NSInteger BeaconLogtime;
-@property (nonatomic, copy) NSString * _Nullable Status;
-@property (strong, nonatomic) CLLocationManager * _Nullable locationManager;
-@property (nonatomic, retain) dispatch_queue_t detectQueue;
+@property (atomic, strong) NSMutableArray * _Nullable region_list;
+@property (atomic) NSInteger BeaconCountFrequency;
+@property (atomic) NSInteger Hold_time;
+@property (atomic) NSInteger BeaconLogtime;
+@property (atomic, copy) NSString * _Nullable Status;
+@property (strong, atomic) CLLocationManager * _Nullable locationManager;
+@property (atomic, retain) dispatch_queue_t detectQueue;
 
 //- (nonnull instancetype)init ;
 //- (nonnull instancetype)initWithServer_ip:(NSString * _Nonnull)server_ip key:(NSString * _Nonnull)key;

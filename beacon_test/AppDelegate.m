@@ -35,7 +35,13 @@
     //Initial BeaconFramework
      _notification = [Notification new] ;
     _iiibeacon = [IIIBeacon new];
-    _detection = [IIIBeaconDetection new];
+    //_detection = [IIIBeaconDetection new];
+    
+    //若你在同一視窗下多次建立 IIIBeaconDetection 卻未正確停止偵測, 系統將會存在多組 IIIBeaconDetection 造成系統效能耗損
+    //在主程式中呼叫 Manager 可自動幫助你在使用 [_detection Stop] 時關閉多餘的 IIIBeaconDetection
+    //只需呼叫一次！！若無多次建立並或未正確停止之狀況則無需使用
+    //_manager = [Manager new];
+    
     
 
     //建立timer用以驗證是否取得資料（資料將會自動傳回至對應變數）
@@ -97,19 +103,17 @@
     
     
     if (_detection.ActiveBeaconList.count > 0) {
-        for (ActiveBeacon* key in _detection.ActiveBeaconList) {
-             NSLog(@"%@", key.id);
+        for (ActiveBeacon* key in [self.detection ActiveBeaconList]) {
+             //NSLog(@"%@", key.id);
             
             BOOL found = NO;
-            NSLock *arrayLock = [[NSLock alloc] init];
-            [arrayLock lock];
+            
             NSPredicate *predicate = [NSPredicate predicateWithFormat:@"uuid == %@", key.id];
             NSArray *filtered = [_message_list filteredArrayUsingPredicate:predicate];
             if ([filtered count] > 0) {
                 found = true;
                 
             }
-            [arrayLock unlock];
             if (!found) {
                 
                 //建立推播內容物件
@@ -119,7 +123,7 @@
 
 //                //取得Beacon對應推播內容
 //                 //Production Environment ( If Test Environment, Please use get_push_message:@"52.69.184.56" .... )
-                [_notification get_push_message_security:@"ideas.iiibeacon.net" beacon_id: key.id key:@"app key" completion:^(message *item, BOOL Sucess){
+                [_notification get_push_message_security:@"ideas.iiibeacon.net" major: key.major.integerValue minor:key.minor.integerValue key:@"app key" completion:^(message *item, BOOL Sucess){
                     if (Sucess) {
                         //資料回傳成功
                         if (item.content.coupons.count > 0) {

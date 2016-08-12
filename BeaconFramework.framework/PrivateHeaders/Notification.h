@@ -18,8 +18,8 @@
 
 
 @interface message : NSObject
-@property (nonatomic, strong) PushContent * _Nullable content;
-@property (nonatomic, copy) NSString * _Nullable state;
+@property (atomic, strong) PushContent * _Nullable content;
+@property (atomic, strong) NSString * _Nullable state;
 - (nonnull instancetype)init;
 @end
 
@@ -27,12 +27,12 @@
 
 @interface Notification : NSObject
 - (nonnull instancetype)init;
-//- (void)get_push_message:(NSString * _Nonnull)server_ip major:(NSInteger)major minor:(NSInteger)minor key:(NSString * _Nonnull)key msg:(message * _Nonnull)msg;
-//- (void)get_push_message:(NSString * _Nonnull)server_ip major:(NSInteger)major minor:(NSInteger)minor key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(message * _Nonnull, BOOL))completion;
+- (void)get_push_message:(NSString * _Nonnull)server_ip major:(NSInteger)major minor:(NSInteger)minor key:(NSString * _Nonnull)key msg:(message * _Nonnull)msg;
+- (void)get_push_message:(NSString * _Nonnull)server_ip major:(NSInteger)major minor:(NSInteger)minor key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(message * _Nonnull, BOOL))completion;
 - (void)get_push_message:(NSString * _Nonnull)server_ip beacon_id:(NSString * _Nonnull)beacon_id key:(NSString * _Nonnull)key msg:(message * _Nonnull)msg;
 - (void)get_push_message:(NSString * _Nonnull)server_ip beacon_id:(NSString * _Nonnull)beacon_id key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(message * _Nonnull, BOOL))completion;
-//- (void)get_push_message_security:(NSString * _Nonnull)security_server major:(NSInteger)major minor:(NSInteger)minor key:(NSString * _Nonnull)key msg:(message * _Nonnull)msg;
-//- (void)get_push_message_security:(NSString * _Nonnull)security_server major:(NSInteger)major minor:(NSInteger)minor key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(message * _Nonnull, BOOL))completion;
+- (void)get_push_message_security:(NSString * _Nonnull)security_server major:(NSInteger)major minor:(NSInteger)minor key:(NSString * _Nonnull)key msg:(message * _Nonnull)msg;
+- (void)get_push_message_security:(NSString * _Nonnull)security_server major:(NSInteger)major minor:(NSInteger)minor key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(message * _Nonnull, BOOL))completion;
 - (void)get_push_message_security:(NSString * _Nonnull)security_server beacon_id:(NSString * _Nonnull)beacon_id key:(NSString * _Nonnull)key msg:(message * _Nonnull)msg;
 - (void)get_push_message_security:(NSString * _Nonnull)security_server beacon_id:(NSString * _Nonnull)beacon_id key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(message * _Nonnull, BOOL))completion;
 @end

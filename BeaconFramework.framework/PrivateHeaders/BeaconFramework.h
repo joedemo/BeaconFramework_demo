@@ -20,3 +20,4 @@ FOUNDATION_EXPORT const unsigned char BeaconFrameworkVersionString[];
 #import <BeaconFramework/Notification.h>
 #import <BeaconFramework/IIIBeaconDetection.h>
 #import <BeaconFramework/IIIBeacon.h>
+#import <BeaconFramework/Manager.h>
