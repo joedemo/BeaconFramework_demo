@@ -104,7 +104,6 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 SWIFT_CLASS("_TtC15BeaconFramework12ActiveBeacon")
 @interface ActiveBeacon : NSObject
 @property (nonatomic, copy) NSString * _Nullable id;
-@property (nonatomic, copy) NSString * _Nullable uuid;
 @property (nonatomic, copy) NSString * _Nullable major;
 @property (nonatomic, copy) NSString * _Nullable minor;
 @property (nonatomic, strong) NSNumber * _Nullable distance;
@@ -120,6 +119,8 @@ SWIFT_CLASS("_TtC15BeaconFramework6Beacon")
 
 SWIFT_CLASS("_TtC15BeaconFramework6Coupon")
 @interface Coupon : NSObject
+@property (nonatomic, copy) NSString * _Nullable templateName;
+@property (nonatomic, copy) NSString * _Nullable templateDescription;
 @property (nonatomic, copy) NSString * _Nullable sellerName;
 @property (nonatomic, copy) NSString * _Nullable sellerDescription;
 @property (nonatomic, copy) NSString * _Nullable couponBriefDescription;
@@ -195,25 +196,25 @@ SWIFT_CLASS("_TtC15BeaconFramework9IIIBeacon")
 - (void)get_beacons_withkey:(NSString * _Nonnull)server_ip key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(BeaconInfo * _Nonnull, BOOL))completion;
 - (void)get_beacons_withkey_security:(NSString * _Nonnull)server key:(NSString * _Nonnull)key beacon_info:(BeaconInfo * _Nonnull)beacon_info;
 - (void)get_beacons_withkey_security:(NSString * _Nonnull)server key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(BeaconInfo * _Nonnull, BOOL))completion;
+- (void)setLogAccount:(NSString * _Nonnull)account;
 @end
 
 
 SWIFT_CLASS("_TtCC15BeaconFramework9IIIBeacon10BeaconInfo")
 @interface BeaconInfo : NSObject
-@property (nonatomic, copy) NSArray<Beacon *> * _Nullable BeaconList;
 @property (nonatomic, copy) NSString * _Nullable state;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@protocol IIIBeaconDetectionDelegate;
 @class CLLocationManager;
 @class CLBeacon;
 @class CLBeaconRegion;
 @class CLRegion;
+@protocol IIIBeaconDetectionDelegate;
 
 SWIFT_CLASS("_TtC15BeaconFramework18IIIBeaconDetection")
 @interface IIIBeaconDetection : NSObject <CLLocationManagerDelegate>
-@property (nonatomic, strong) id <IIIBeaconDetectionDelegate> _Nullable delegate;
+@property (nonatomic, weak) id <IIIBeaconDetectionDelegate> _Nullable delegate;
 @property (nonatomic, copy) NSArray<ActiveBeacon *> * _Nullable ActiveBeaconList;
 @property (nonatomic) NSInteger BeaconCountFrequency;
 @property (nonatomic) NSInteger Hold_time;
@@ -303,6 +304,8 @@ SWIFT_CLASS("_TtCC15BeaconFramework12Notification7message")
 
 SWIFT_CLASS("_TtC15BeaconFramework7Product")
 @interface Product : NSObject
+@property (nonatomic, copy) NSString * _Nullable templateName;
+@property (nonatomic, copy) NSString * _Nullable templateDescription;
 @property (nonatomic, copy) NSString * _Nullable sellerName;
 @property (nonatomic, copy) NSString * _Nullable sellerDescription;
 @property (nonatomic, copy) NSString * _Nullable productBriefDescription;
