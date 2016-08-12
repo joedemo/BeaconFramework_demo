@@ -249,11 +249,11 @@
                   moduleName = "BeaconFramework_demo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/joejoe/Documents/Project/BeaconFramework_demo/BeaconFramework_demo/AppDelegate.swift"
-                  timestampString = "487583595.783043"
+                  timestampString = "492684522.62599"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "87"
-                  endingLineNumber = "87"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
                   offsetFromSymbolStart = "1308">
                </Location>
                <Location
@@ -264,11 +264,11 @@
                   moduleName = "BeaconFramework_demo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/joejoe/Documents/Project/BeaconFramework_demo/BeaconFramework_demo/AppDelegate.swift"
-                  timestampString = "487583595.78312"
+                  timestampString = "492684522.626213"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "89"
-                  endingLineNumber = "89"
+                  startingLineNumber = "91"
+                  endingLineNumber = "91"
                   offsetFromSymbolStart = "32">
                </Location>
             </Locations>
@@ -334,6 +334,22 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "95"
             endingLineNumber = "95"
+            landmarkName = "BeaconDetectd()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BeaconFramework_demo/AppDelegate.swift"
+            timestampString = "492496875.377886"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
             landmarkName = "BeaconDetectd()"
             landmarkType = "5">
          </BreakpointContent>
