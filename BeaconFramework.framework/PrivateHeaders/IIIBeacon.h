@@ -30,29 +30,29 @@
 @interface BeaconInfo : NSObject{
 
 }
-@property (nonatomic, retain) NSMutableArray * _Nullable BeaconList;
-@property (nonatomic, copy) NSString * _Nullable state;
-@property (nonatomic, copy) NSString * _Nullable server;
-@property (nonatomic, copy) NSString * _Nullable app_key;
-@property (nonatomic, assign) BOOL product_server;
+@property (atomic, strong) NSMutableArray * _Nullable BeaconList;
+@property (atomic, weak) NSString * _Nullable state;
+@property (atomic, weak) NSString * _Nullable server;
+@property (atomic, weak) NSString * _Nullable app_key;
+@property (atomic, assign) BOOL product_server;
 
 @end
 
 
 @interface Beacon : NSObject
 
-@property (nonatomic, copy) NSString * _Nullable beacon_id;
-@property (nonatomic, copy) NSString * _Nullable beacon_uuid;
-@property (nonatomic, copy) NSString * _Nullable beacon_proximity_uuid;
-@property (nonatomic, copy) NSNumber * _Nullable major;
-@property (nonatomic, copy) NSNumber * _Nullable minor;
+@property (atomic, weak) NSString * _Nullable beacon_id;
+@property (atomic, weak) NSString * _Nullable beacon_uuid;
+@property (atomic, weak) NSString * _Nullable beacon_proximity_uuid;
+@property (atomic, weak) NSNumber * _Nullable major;
+@property (atomic, weak) NSNumber * _Nullable minor;
 
 //@property (nonatomic, copy) NSString * _Nullable name;
 //@property (nonatomic, copy) NSString * _Nullable address;
 
 //@property (nonatomic, copy) NSNumber * _Nullable latitude;
 //@property (nonatomic, copy) NSNumber * _Nullable longitude;
-@property (nonatomic, copy) NSNumber * _Nullable power;
+@property (atomic, weak) NSNumber * _Nullable power;
 
 @end
 

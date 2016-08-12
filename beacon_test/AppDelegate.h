@@ -18,6 +18,7 @@
 @property (nonatomic, strong) BeaconInfo *beacon_info;
 
 @property (nonatomic, strong) IIIBeaconDetection *detection;
+@property (nonatomic, strong) Manager *manager;
 @property (nonatomic, strong) NSMutableArray *message_list;
 
 @property  NSTimer *timer;

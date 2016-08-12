@@ -15,42 +15,42 @@
 
 @class PushContent;
 @interface Coupon : NSObject
-@property (nonatomic, copy) NSString * _Nullable templateName;
-@property (nonatomic, copy) NSString * _Nullable templateDescription;
-@property (nonatomic, copy) NSString * _Nullable sellerName;
-@property (nonatomic, copy) NSString * _Nullable sellerDescription;
-@property (nonatomic, copy) NSString * _Nullable couponBriefDescription;
-@property (nonatomic, copy) NSString * _Nullable couponDetailDescription;
-@property (nonatomic, copy) NSString * _Nullable others;
-@property (nonatomic, strong) NSNumber * _Nullable quantity;
-@property (nonatomic, strong) NSNumber * _Nullable surplus;
-@property (nonatomic, copy) NSString * _Nullable photoUrl;
-@property (nonatomic, copy) NSString * _Nullable validStartDate;
-@property (nonatomic, copy) NSString * _Nullable validEndDate;
+@property (atomic, weak) NSString * _Nullable templateName;
+@property (atomic, weak) NSString * _Nullable templateDescription;
+@property (atomic, weak) NSString * _Nullable sellerName;
+@property (atomic, weak) NSString * _Nullable sellerDescription;
+@property (atomic, weak) NSString * _Nullable couponBriefDescription;
+@property (atomic, weak) NSString * _Nullable couponDetailDescription;
+@property (atomic, weak) NSString * _Nullable others;
+@property (atomic, weak) NSNumber * _Nullable quantity;
+@property (atomic, weak) NSNumber * _Nullable surplus;
+@property (atomic, weak) NSString * _Nullable photoUrl;
+@property (atomic, weak) NSString * _Nullable validStartDate;
+@property (atomic, weak) NSString * _Nullable validEndDate;
 @end
 
 
 @interface Product : NSObject
-@property (nonatomic, copy) NSString * _Nullable templateName;
-@property (nonatomic, copy) NSString * _Nullable templateDescription;
-@property (nonatomic, copy) NSString * _Nullable sellerName;
-@property (nonatomic, copy) NSString * _Nullable sellerDescription;
-@property (nonatomic, copy) NSString * _Nullable productBriefDescription;
-@property (nonatomic, copy) NSString * _Nullable productDetailDescription;
-@property (nonatomic, strong) NSNumber * _Nullable originPrice;
-@property (nonatomic, strong) NSNumber * _Nullable discount;
-@property (nonatomic, copy) NSString * _Nullable others;
-@property (nonatomic, strong) NSNumber * _Nullable quantity;
-@property (nonatomic, strong) NSNumber * _Nullable surplus;
-@property (nonatomic, copy) NSString * _Nullable photoUrl;
-@property (nonatomic, copy) NSString * _Nullable validStartDate;
-@property (nonatomic, copy) NSString * _Nullable validEndDate;
+@property (atomic, weak) NSString * _Nullable templateName;
+@property (atomic, weak) NSString * _Nullable templateDescription;
+@property (atomic, weak) NSString * _Nullable sellerName;
+@property (atomic, weak) NSString * _Nullable sellerDescription;
+@property (atomic, weak) NSString * _Nullable productBriefDescription;
+@property (atomic, weak) NSString * _Nullable productDetailDescription;
+@property (atomic, weak) NSNumber * _Nullable originPrice;
+@property (atomic, weak) NSNumber * _Nullable discount;
+@property (atomic, weak) NSString * _Nullable others;
+@property (atomic, weak) NSNumber * _Nullable quantity;
+@property (atomic, weak) NSNumber * _Nullable surplus;
+@property (atomic, weak) NSString * _Nullable photoUrl;
+@property (atomic, weak) NSString * _Nullable validStartDate;
+@property (atomic, weak) NSString * _Nullable validEndDate;
 @end
 
 
 @interface PushContent : NSObject
-@property (nonatomic, retain) NSMutableArray * _Nonnull coupons;
-@property (nonatomic, retain) NSMutableArray * _Nonnull products;
+@property (atomic, strong) NSMutableArray * _Nonnull coupons;
+@property (atomic, strong) NSMutableArray * _Nonnull products;
 @end
 
 
