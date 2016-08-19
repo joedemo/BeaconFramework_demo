@@ -458,11 +458,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "beacon_test/AppDelegate.m"
-            timestampString = "493183406.04918"
+            timestampString = "493274067.931571"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
             landmarkName = "-BeaconDetectd"
             landmarkType = "5">
          </BreakpointContent>
@@ -474,11 +474,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "beacon_test/AppDelegate.m"
-            timestampString = "493183406.04918"
+            timestampString = "493274067.931571"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "127"
-            endingLineNumber = "127"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "-BeaconDetectd"
             landmarkType = "5">
             <Locations>
@@ -490,12 +490,12 @@
                   moduleName = "BeaconFramework_demo(object-c)"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/joejoe/Documents/Project/BeaconFramework_demo-IIIBeaconDetect-object-c-static/beacon_test/AppDelegate.m"
-                  timestampString = "492606233.730475"
+                  timestampString = "493274100.024043"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "122"
-                  endingLineNumber = "122"
-                  offsetFromSymbolStart = "956">
+                  startingLineNumber = "126"
+                  endingLineNumber = "126"
+                  offsetFromSymbolStart = "856">
                </Location>
                <Location
                   shouldBeEnabled = "No"
@@ -505,11 +505,11 @@
                   moduleName = "BeaconFramework_demo(object-c)"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/joejoe/Documents/Project/BeaconFramework_demo-IIIBeaconDetect-object-c-static/beacon_test/AppDelegate.m"
-                  timestampString = "492606233.730691"
+                  timestampString = "493274100.024162"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "123"
-                  endingLineNumber = "123"
+                  startingLineNumber = "127"
+                  endingLineNumber = "127"
                   offsetFromSymbolStart = "60">
                </Location>
             </Locations>
@@ -522,11 +522,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "beacon_test/AppDelegate.m"
-            timestampString = "493183406.04918"
+            timestampString = "493274067.931571"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
             landmarkName = "-BeaconDetectd"
             landmarkType = "5">
          </BreakpointContent>
@@ -538,11 +538,59 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "beacon_test/AppDelegate.m"
-            timestampString = "493183406.04918"
+            timestampString = "493274067.931571"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
+            landmarkName = "-BeaconDetectd"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "beacon_test/AppDelegate.m"
+            timestampString = "493274090.421379"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
+            landmarkName = "-BeaconDetectd"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "beacon_test/AppDelegate.m"
+            timestampString = "493274092.340801"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
+            landmarkName = "-BeaconDetectd"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "beacon_test/AppDelegate.m"
+            timestampString = "493274205.708169"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
             landmarkName = "-BeaconDetectd"
             landmarkType = "5">
          </BreakpointContent>
