@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>.DS_Store</key>
+		<data>
+		QcXoiHAJByJ1G+BJhvmRRhYg71s=
+		</data>
 		<key>Info.plist</key>
 		<data>
 		ec98xGpYvvJg7W3N+iqCTtej6po=
@@ -26,7 +30,7 @@
 		</data>
 		<key>PrivateHeaders/IIIBeaconDetection.h</key>
 		<data>
-		9wgEiUpkMUZ1zEWCJ1EZWkxItnY=
+		gcbPBrDzIuBvqLG0p5bczfjnVBg=
 		</data>
 		<key>PrivateHeaders/Manager.h</key>
 		<data>
@@ -87,11 +91,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9wgEiUpkMUZ1zEWCJ1EZWkxItnY=
+			gcbPBrDzIuBvqLG0p5bczfjnVBg=
 			</data>
 			<key>hash2</key>
 			<data>
-			5CCms0IeC3vloJMU6CkPHzwcbDrJyvo+KahkXGyDlRk=
+			a5TS+gAY1Knl4qEX9H3n24bDUlQj0AXpCI3bOmON/SY=
 			</data>
 		</dict>
 		<key>PrivateHeaders/Manager.h</key>
