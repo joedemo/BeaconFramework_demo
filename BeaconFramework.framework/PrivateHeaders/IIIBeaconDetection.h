@@ -51,6 +51,7 @@
 //@property (nonatomic, retain) NSMutableArray * _Nullable uuid_list;
 @property (atomic, strong) NSMutableArray * _Nullable region_list;
 @property (atomic) NSInteger BeaconCountFrequency;
+@property (atomic) NSInteger RestTime;
 @property (atomic) NSInteger Hold_time;
 @property (atomic) NSInteger BeaconLogtime;
 @property (atomic, copy) NSString * _Nullable Status;
