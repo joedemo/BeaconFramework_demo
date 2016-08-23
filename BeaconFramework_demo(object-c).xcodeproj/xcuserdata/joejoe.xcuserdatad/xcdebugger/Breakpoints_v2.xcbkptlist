@@ -426,12 +426,12 @@
                   moduleName = "BeaconFramework_demo(object-c)"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/joejoe/Documents/Project/BeaconFramework_demo-IIIBeaconDetect-object-c-static/beacon_test/AppDelegate.m"
-                  timestampString = "492605985.795488"
+                  timestampString = "493640184.601247"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "100"
-                  endingLineNumber = "100"
-                  offsetFromSymbolStart = "64">
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "176">
                </Location>
                <Location
                   shouldBeEnabled = "No"
@@ -441,12 +441,12 @@
                   moduleName = "BeaconFramework_demo(object-c)"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/joejoe/Documents/Project/BeaconFramework_demo-IIIBeaconDetect-object-c-static/beacon_test/AppDelegate.m"
-                  timestampString = "492605985.795657"
+                  timestampString = "493640184.601381"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "100"
-                  endingLineNumber = "100"
-                  offsetFromSymbolStart = "124">
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "192">
                </Location>
             </Locations>
          </BreakpointContent>

@@ -46,8 +46,8 @@
 @interface IIIBeaconDetection : NSObject <CLLocationManagerDelegate>
 
 @property (atomic, weak) id <IIIBeaconDetectionDelegate> _Nullable delegate;
-@property (atomic, strong) NSMutableArray * _Nullable ActiveBeaconList;
-@property (atomic, strong) NSMutableArray * _Nullable HistoryBeaconList;
+@property (nonatomic, strong) NSMutableArray * _Nullable ActiveBeaconList;
+@property (nonatomic, strong) NSMutableArray * _Nullable HistoryBeaconList;
 //@property (nonatomic, retain) NSMutableArray * _Nullable uuid_list;
 @property (atomic, strong) NSMutableArray * _Nullable region_list;
 @property (atomic) NSInteger BeaconCountFrequency;
