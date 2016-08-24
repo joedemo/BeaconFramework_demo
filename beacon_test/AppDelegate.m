@@ -122,7 +122,7 @@
                         }
                         
                     }
-                }];
+                }]; 
                 
                 [_message_list addObject:message_item];
                 
