@@ -4,6 +4,30 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/BeaconFramework.h</key>
+		<data>
+		OFgrSLtGQ1wiRhhKUVWQoFijfj8=
+		</data>
+		<key>Headers/Global.h</key>
+		<data>
+		7oYzx/aL9kR5H9GWXq4cHkMCPCk=
+		</data>
+		<key>Headers/IIIBeacon.h</key>
+		<data>
+		qxrwHPklS6RHcmm8ndax5rQZ+/A=
+		</data>
+		<key>Headers/IIIBeaconDetection.h</key>
+		<data>
+		Av/+aTSjrogaX4DVhs2MGrgjOSE=
+		</data>
+		<key>Headers/Manager.h</key>
+		<data>
+		XFUlxWbhqBHgg11JqQVVbOBmGa0=
+		</data>
+		<key>Headers/Notification.h</key>
+		<data>
+		s/T9TwHWQ+VsIkUEK2z00wLYY30=
+		</data>
 		<key>Info.plist</key>
 		<data>
 		ec98xGpYvvJg7W3N+iqCTtej6po=
@@ -12,45 +36,10 @@
 		<data>
 		Fdm8Dh+yhzJbI/yla/vR2DiAM6w=
 		</data>
-		<key>PrivateHeaders/BeaconFramework.h</key>
-		<data>
-		OFgrSLtGQ1wiRhhKUVWQoFijfj8=
-		</data>
-		<key>PrivateHeaders/Global.h</key>
-		<data>
-		7oYzx/aL9kR5H9GWXq4cHkMCPCk=
-		</data>
-		<key>PrivateHeaders/IIIBeacon.h</key>
-		<data>
-		qxrwHPklS6RHcmm8ndax5rQZ+/A=
-		</data>
-		<key>PrivateHeaders/IIIBeaconDetection.h</key>
-		<data>
-		Av/+aTSjrogaX4DVhs2MGrgjOSE=
-		</data>
-		<key>PrivateHeaders/Manager.h</key>
-		<data>
-		XFUlxWbhqBHgg11JqQVVbOBmGa0=
-		</data>
-		<key>PrivateHeaders/Notification.h</key>
-		<data>
-		s/T9TwHWQ+VsIkUEK2z00wLYY30=
-		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Modules/module.modulemap</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Fdm8Dh+yhzJbI/yla/vR2DiAM6w=
-			</data>
-			<key>hash2</key>
-			<data>
-			RhxHVe3wN5JmhEp/E4ZrwRak6taaaE/AZSIglb8hcAY=
-			</data>
-		</dict>
-		<key>PrivateHeaders/BeaconFramework.h</key>
+		<key>Headers/BeaconFramework.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -61,7 +50,7 @@
 			zznbzbQECTkWRULeWtha0CYVh02VKs8Lof/fyV9wgG0=
 			</data>
 		</dict>
-		<key>PrivateHeaders/Global.h</key>
+		<key>Headers/Global.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -72,7 +61,7 @@
 			2PYDjGcG+p3TAHlxtNNRcgDxKKSD1VtdFLwkvLjRLrg=
 			</data>
 		</dict>
-		<key>PrivateHeaders/IIIBeacon.h</key>
+		<key>Headers/IIIBeacon.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -83,7 +72,7 @@
 			uWugJ1jjeqkDZjSX2l+p9y/86U7D4pNPWM6xGBqcvxE=
 			</data>
 		</dict>
-		<key>PrivateHeaders/IIIBeaconDetection.h</key>
+		<key>Headers/IIIBeaconDetection.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -94,7 +83,7 @@
 			z7+MkMfAuDCQwFxqmjl8j13p3Qi7fnuJJKsvTb318zs=
 			</data>
 		</dict>
-		<key>PrivateHeaders/Manager.h</key>
+		<key>Headers/Manager.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -105,7 +94,7 @@
 			LJ7zl4ZNBCu55kfogeFBsjhA4kuRwXr4gAfWymfOHT8=
 			</data>
 		</dict>
-		<key>PrivateHeaders/Notification.h</key>
+		<key>Headers/Notification.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -114,6 +103,17 @@
 			<key>hash2</key>
 			<data>
 			hypotMPYOuqT9BiBPqdPZAY0JJmFIL4RVLiMXzU8eYs=
+			</data>
+		</dict>
+		<key>Modules/module.modulemap</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Fdm8Dh+yhzJbI/yla/vR2DiAM6w=
+			</data>
+			<key>hash2</key>
+			<data>
+			RhxHVe3wN5JmhEp/E4ZrwRak6taaaE/AZSIglb8hcAY=
 			</data>
 		</dict>
 	</dict>
