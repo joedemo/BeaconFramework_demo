@@ -4,10 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		yIZD9kl4I+wwWzuJOurYzy+i/3I=
-		</data>
 		<key>Headers/BeaconFramework.h</key>
 		<data>
 		OFgrSLtGQ1wiRhhKUVWQoFijfj8=
@@ -18,11 +14,11 @@
 		</data>
 		<key>Headers/IIIBeacon.h</key>
 		<data>
-		qxrwHPklS6RHcmm8ndax5rQZ+/A=
+		qSgfrxkBKLKYNfI0SLPyiKs6oj0=
 		</data>
 		<key>Headers/IIIBeaconDetection.h</key>
 		<data>
-		Av/+aTSjrogaX4DVhs2MGrgjOSE=
+		LzTMJWzVRCVEwxxfcNZy3wJ39pM=
 		</data>
 		<key>Headers/Manager.h</key>
 		<data>
@@ -69,22 +65,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qxrwHPklS6RHcmm8ndax5rQZ+/A=
+			qSgfrxkBKLKYNfI0SLPyiKs6oj0=
 			</data>
 			<key>hash2</key>
 			<data>
-			uWugJ1jjeqkDZjSX2l+p9y/86U7D4pNPWM6xGBqcvxE=
+			4/nsnqHEJZzTADr5tgSKCZs+s62JjpE0WoD3+kN4JQ0=
 			</data>
 		</dict>
 		<key>Headers/IIIBeaconDetection.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Av/+aTSjrogaX4DVhs2MGrgjOSE=
+			LzTMJWzVRCVEwxxfcNZy3wJ39pM=
 			</data>
 			<key>hash2</key>
 			<data>
-			z7+MkMfAuDCQwFxqmjl8j13p3Qi7fnuJJKsvTb318zs=
+			aEHMXMPvXn/DrEZ6S8ys9nD1YPwi/kiYzbfX2FGvahs=
 			</data>
 		</dict>
 		<key>Headers/Manager.h</key>
