@@ -83,7 +83,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, IIIBeaconDetectionDelegat
                         //建立推播內容物件
                         value.message = Notification.message()
                         value.uuid = item.id
-                        
+                    
                         //取得Beacon對應推播內容
                         ////Production Environment ( If Test Environment, Please use get_push_message("52.69.184.56", ....) )
                         notification.get_push_message_security("ideas.iiibeacon.net", major: Int(item.major!)!, minor: Int(item.minor!)!, key: "app key" ){ (completion) -> () in
