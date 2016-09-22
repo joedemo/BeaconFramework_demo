@@ -115,6 +115,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreLocation;
 #endif
 
+#import <BeaconFramework/BeaconFramework.h>
+
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 @class NSNumber;
@@ -240,11 +242,12 @@ SWIFT_CLASS("_TtCC15BeaconFramework9IIIBeacon10BeaconInfo")
 @class CLLocationManager;
 @class CLBeacon;
 @class CLBeaconRegion;
+@class NSMutableArray;
 @class CLRegion;
 @protocol IIIBeaconDetectionDelegate;
 
 SWIFT_CLASS("_TtC15BeaconFramework18IIIBeaconDetection")
-@interface IIIBeaconDetection : NSObject <CLLocationManagerDelegate>
+@interface IIIBeaconDetection : NSObject <LBeaconMonitorDelegate, CLLocationManagerDelegate>
 @property (nonatomic, weak) id <IIIBeaconDetectionDelegate> _Nullable delegate;
 @property (nonatomic, copy) NSArray<ActiveBeacon *> * _Nullable ActiveBeaconList;
 @property (nonatomic) NSInteger BeaconCountFrequency;
@@ -259,6 +262,7 @@ SWIFT_CLASS("_TtC15BeaconFramework18IIIBeaconDetection")
 - (void)StartWithProximity_uuid:(NSString * _Nonnull)proximity_uuid;
 - (void)Stop;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didRangeBeacons:(NSArray<CLBeacon *> * _Nonnull)beacons inRegion:(CLBeaconRegion * _Nonnull)region;
+- (void)lbeaconBeaconsRanged:(NSMutableArray * _Nullable)beacons;
 - (void)locationManagerWithManager:(CLLocationManager * _Nonnull)manager didEnterRegion:(CLRegion * _Nonnull)region;
 - (void)locationManagerWithManager:(CLLocationManager * _Nonnull)manager didExitRegion:(CLRegion * _Nonnull)region;
 @end
