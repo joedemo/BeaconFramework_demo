@@ -57,6 +57,7 @@
 @property (atomic, copy) NSString * _Nullable Status;
 @property (strong, atomic) CLLocationManager * _Nullable locationManager;
 @property (atomic, retain) dispatch_queue_t detectQueue;
+@property (atomic, retain) dispatch_queue_t lbdetectQueue;
 
 //- (nonnull instancetype)init ;
 //- (nonnull instancetype)initWithServer_ip:(NSString * _Nonnull)server_ip key:(NSString * _Nonnull)key;
