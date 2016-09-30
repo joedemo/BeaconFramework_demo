@@ -127,6 +127,7 @@ SWIFT_CLASS("_TtC15BeaconFramework12ActiveBeacon")
 @property (nonatomic, copy) NSString * _Nullable major;
 @property (nonatomic, copy) NSString * _Nullable minor;
 @property (nonatomic, strong) NSNumber * _Nullable distance;
+@property (nonatomic, strong) NSNumber * _Nullable rssi;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
