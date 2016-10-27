@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B463EB671D59DE37008C66B0 /* BeaconFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B463EB661D59DE37008C66B0 /* BeaconFramework.framework */; };
-		B463EB681D59DE3D008C66B0 /* BeaconFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B463EB661D59DE37008C66B0 /* BeaconFramework.framework */; };
-		B463EB691D59DE3D008C66B0 /* BeaconFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B463EB661D59DE37008C66B0 /* BeaconFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B4431FF71DC1F44E002DBC40 /* BeaconFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4431FF61DC1F44E002DBC40 /* BeaconFramework.framework */; };
+		B4431FF81DC1F457002DBC40 /* BeaconFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4431FF61DC1F44E002DBC40 /* BeaconFramework.framework */; };
+		B4431FF91DC1F457002DBC40 /* BeaconFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4431FF61DC1F44E002DBC40 /* BeaconFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B4FC7ECE1CB4B6050083F64A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4FC7ECD1CB4B6050083F64A /* main.m */; };
 		B4FC7ED11CB4B6050083F64A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4FC7ED01CB4B6050083F64A /* AppDelegate.m */; };
 		B4FC7ED41CB4B6050083F64A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4FC7ED31CB4B6050083F64A /* ViewController.m */; };
@@ -25,7 +25,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B463EB691D59DE3D008C66B0 /* BeaconFramework.framework in Embed Frameworks */,
+				B4431FF91DC1F457002DBC40 /* BeaconFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -33,7 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B463EB661D59DE37008C66B0 /* BeaconFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BeaconFramework.framework; sourceTree = "<group>"; };
+		B4431FF61DC1F44E002DBC40 /* BeaconFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BeaconFramework.framework; sourceTree = "<group>"; };
 		B4FC7EC91CB4B6050083F64A /* BeaconFramework_demo(object-c).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BeaconFramework_demo(object-c).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4FC7ECD1CB4B6050083F64A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B4FC7ECF1CB4B6050083F64A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,8 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B463EB671D59DE37008C66B0 /* BeaconFramework.framework in Frameworks */,
-				B463EB681D59DE3D008C66B0 /* BeaconFramework.framework in Frameworks */,
+				B4431FF71DC1F44E002DBC40 /* BeaconFramework.framework in Frameworks */,
+				B4431FF81DC1F457002DBC40 /* BeaconFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +62,7 @@
 		B4FC7EC01CB4B6040083F64A = {
 			isa = PBXGroup;
 			children = (
-				B463EB661D59DE37008C66B0 /* BeaconFramework.framework */,
+				B4431FF61DC1F44E002DBC40 /* BeaconFramework.framework */,
 				B4FC7ECB1CB4B6050083F64A /* beacon_test */,
 				B4FC7ECA1CB4B6050083F64A /* Products */,
 			);
@@ -241,6 +241,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LIBTOOLFLAGS = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -269,6 +270,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -279,6 +281,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LIBTOOLFLAGS = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

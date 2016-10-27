@@ -12,7 +12,7 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (nonatomic, strong) Notification *notification;
+@property (nonatomic, strong) IIINotification *notification;
 @property (nonatomic, strong) IIIBeacon *iiibeacon;
 @property (nonatomic, strong) message *msg;
 @property (nonatomic, strong) BeaconInfo *beacon_info;

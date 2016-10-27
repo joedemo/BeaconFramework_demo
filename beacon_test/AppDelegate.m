@@ -33,7 +33,7 @@
     // Override point for customization after application launch.
     
     //Initial BeaconFramework
-     _notification = [Notification new] ;
+     _notification = [IIINotification new] ;
     _iiibeacon = [IIIBeacon new];
     //_detection = [IIIBeaconDetection new];
     
@@ -44,7 +44,7 @@
     
     //IIIBeaconDetection
     //Production Environment ( If Test Environment, Please use get_beacons_withkey:@"52.69.184.56" key: @"app key" ... )
-    [_iiibeacon get_beacons_withkey_security:@"ideas.iiibeacon.net" key: @"app key" completion: ^(BeaconInfo *item , BOOL Sucess) {
+    [_iiibeacon get_beacons_withkey_securityWithServer:@"ideas.iiibeacon.net" key: @"app key" completion: ^(BeaconInfo *item , BOOL Sucess) {
         if (Sucess) {
             //app key對應beacon取得成功
             dispatch_async(dispatch_get_main_queue(), ^{
@@ -78,13 +78,13 @@
     {
         
         for (_Message *item in _message_list) {
-            if ([item->msg.state isEqual: @"Sucess"]) {
-                
-
-                [_timer invalidate];
-                
-                break;
-            }
+//            if ([item->msg.state isEqual: @"Sucess"]) {
+//                
+//
+//                [_timer invalidate];
+//                
+//                break;
+//            }
         }
         
     }
@@ -114,7 +114,7 @@
                 
                 //                //取得Beacon對應推播內容
                 //                 //Production Environment ( If Test Environment, Please use get_push_message:@"52.69.184.56" .... )
-                [_notification get_push_message_security:@"ideas.iiibeacon.net" major: key.major.integerValue minor: key.minor.integerValue key:@"app key" completion:^(message *item, BOOL Sucess){
+                [_notification get_push_message_securityWithSecurity_server:@"ideas.iiibeacon.net" major: key.major.integerValue minor: key.minor.integerValue key:@"app key" completion:^(message *item, BOOL Sucess){
                     if (Sucess) {
                         //資料回傳成功
                         if (item.content.coupons.count > 0) {
