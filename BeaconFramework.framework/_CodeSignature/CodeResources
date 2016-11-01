@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/IIIBeaconDetection.h</key>
 		<data>
-		EKqImKSdACmnhqGZXcjTJinFYWE=
+		UQYHNgQCU4AeHlg4HuYTxATSwRs=
 		</data>
 		<key>Headers/LBeacon.h</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Yg837BvUQA6+HiEPuQEdQZloPDU=
+		ifxqwMROrakJwpIS1GjUHVVrOAg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -108,11 +108,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EKqImKSdACmnhqGZXcjTJinFYWE=
+			UQYHNgQCU4AeHlg4HuYTxATSwRs=
 			</data>
 			<key>hash2</key>
 			<data>
-			KJFCAuwlP0blJJ3X9qg5rs9d7x1RuwwE4Yr/dQ2W0A4=
+			qZqM9zFA9nV/G4eTC59GGjtFHs6AXV2s+w9BXT23b9M=
 			</data>
 		</dict>
 		<key>Headers/LBeacon.h</key>

@@ -16,7 +16,7 @@
             startingLineNumber = "77"
             endingLineNumber = "77"
             landmarkName = "-application:didFinishLaunchingWithOptions:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -32,7 +32,7 @@
             startingLineNumber = "48"
             endingLineNumber = "48"
             landmarkName = "-application:didFinishLaunchingWithOptions:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -96,7 +96,7 @@
             startingLineNumber = "37"
             endingLineNumber = "37"
             landmarkName = "-application:didFinishLaunchingWithOptions:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -112,7 +112,7 @@
             startingLineNumber = "39"
             endingLineNumber = "39"
             landmarkName = "-application:didFinishLaunchingWithOptions:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -128,7 +128,7 @@
             startingLineNumber = "62"
             endingLineNumber = "62"
             landmarkName = "-application:didFinishLaunchingWithOptions:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -144,7 +144,7 @@
             startingLineNumber = "66"
             endingLineNumber = "66"
             landmarkName = "-application:didFinishLaunchingWithOptions:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -160,7 +160,7 @@
             startingLineNumber = "84"
             endingLineNumber = "84"
             landmarkName = "-update"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -176,7 +176,7 @@
             startingLineNumber = "54"
             endingLineNumber = "54"
             landmarkName = "-application:didFinishLaunchingWithOptions:"
-            landmarkType = "5">
+            landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -224,7 +224,7 @@
             startingLineNumber = "56"
             endingLineNumber = "56"
             landmarkName = "-application:didFinishLaunchingWithOptions:"
-            landmarkType = "5">
+            landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -272,7 +272,7 @@
             startingLineNumber = "67"
             endingLineNumber = "67"
             landmarkName = "-application:didFinishLaunchingWithOptions:"
-            landmarkType = "5">
+            landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -320,7 +320,7 @@
             startingLineNumber = "87"
             endingLineNumber = "87"
             landmarkName = "-update"
-            landmarkType = "5">
+            landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -368,7 +368,7 @@
             startingLineNumber = "101"
             endingLineNumber = "101"
             landmarkName = "-BeaconDetectd"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -384,7 +384,7 @@
             startingLineNumber = "88"
             endingLineNumber = "88"
             landmarkName = "-update"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -400,7 +400,7 @@
             startingLineNumber = "75"
             endingLineNumber = "75"
             landmarkName = "-application:didFinishLaunchingWithOptions:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -416,7 +416,7 @@
             startingLineNumber = "106"
             endingLineNumber = "106"
             landmarkName = "-BeaconDetectd"
-            landmarkType = "5">
+            landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -464,7 +464,7 @@
             startingLineNumber = "109"
             endingLineNumber = "109"
             landmarkName = "-BeaconDetectd"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -480,7 +480,7 @@
             startingLineNumber = "126"
             endingLineNumber = "126"
             landmarkName = "-BeaconDetectd"
-            landmarkType = "5">
+            landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -490,12 +490,12 @@
                   moduleName = "BeaconFramework_demo(object-c)"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/joejoe/Documents/Project/BeaconFramework_demo-IIIBeaconDetect-object-c-static/beacon_test/AppDelegate.m"
-                  timestampString = "493274100.024043"
+                  timestampString = "499665009.584279"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "126"
                   endingLineNumber = "126"
-                  offsetFromSymbolStart = "856">
+                  offsetFromSymbolStart = "848">
                </Location>
                <Location
                   shouldBeEnabled = "No"
@@ -505,7 +505,7 @@
                   moduleName = "BeaconFramework_demo(object-c)"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/joejoe/Documents/Project/BeaconFramework_demo-IIIBeaconDetect-object-c-static/beacon_test/AppDelegate.m"
-                  timestampString = "493274100.024162"
+                  timestampString = "499665009.586315"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "127"
@@ -528,7 +528,7 @@
             startingLineNumber = "122"
             endingLineNumber = "122"
             landmarkName = "-BeaconDetectd"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -544,7 +544,7 @@
             startingLineNumber = "113"
             endingLineNumber = "113"
             landmarkName = "-BeaconDetectd"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -560,7 +560,7 @@
             startingLineNumber = "117"
             endingLineNumber = "117"
             landmarkName = "-BeaconDetectd"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -576,7 +576,7 @@
             startingLineNumber = "111"
             endingLineNumber = "111"
             landmarkName = "-BeaconDetectd"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -592,7 +592,7 @@
             startingLineNumber = "107"
             endingLineNumber = "107"
             landmarkName = "-BeaconDetectd"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -608,7 +608,7 @@
             startingLineNumber = "121"
             endingLineNumber = "121"
             landmarkName = "-BeaconDetectd"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -704,7 +704,7 @@
             startingLineNumber = "105"
             endingLineNumber = "105"
             landmarkName = "-BeaconDetectd"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -720,7 +720,7 @@
             startingLineNumber = "53"
             endingLineNumber = "53"
             landmarkName = "-application:didFinishLaunchingWithOptions:"
-            landmarkType = "5">
+            landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -753,6 +753,22 @@
                   offsetFromSymbolStart = "60">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "beacon_test/AppDelegate.m"
+            timestampString = "499664490.104535"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
+            landmarkName = "-BeaconDetectd"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

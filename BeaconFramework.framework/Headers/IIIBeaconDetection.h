@@ -35,6 +35,7 @@
 @property (atomic, strong) NSString * _Nullable major;
 @property (atomic, strong) NSString * _Nullable minor;
 @property (atomic, strong) NSNumber * _Nullable distance;
+@property (atomic, strong) NSNumber * _Nullable rssi;
 @end
 
 @interface EncryptUUID : NSObject
