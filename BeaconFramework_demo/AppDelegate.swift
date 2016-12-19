@@ -92,8 +92,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, IIIBeaconDetectionDelegat
                             if(completion.1){
                                 
                                 //資料回傳成功
-                                if completion.0.content!.coupons.count > 0{
-                                 print("已取得 " + item.id! + " 資料; photoUrl: " + completion.0.content!.coupons[0].photoUrl!)
+                                if completion.0.content!.products.count > 0{
+                                 print("已取得 " + item.id! + " 資料; photoUrl: " + completion.0.content!.products[0].photoUrl!)
                                 }
                                
                             }

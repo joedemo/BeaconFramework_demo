@@ -6,19 +6,11 @@
 	<dict>
 		<key>Headers/BeaconFramework-Swift.h</key>
 		<data>
-		JiLV/PU448BMSKwjyyQN/dUpu2I=
+		jBaGZYpext1oP3et7XkdlpSY4hM=
 		</data>
 		<key>Headers/BeaconFramework.h</key>
 		<data>
-		4emABjBbMe7SuPrsBJnbpi6P+ZQ=
-		</data>
-		<key>Headers/CannexBeacon.h</key>
-		<data>
-		IXucGd5Rtkk0d4liovhmT4x17h8=
-		</data>
-		<key>Headers/CannexBeaconManager.h</key>
-		<data>
-		IngTMcS9qOYt4ykmebM+qSwCKy8=
+		7CIZTS/jpLGEFMIIOouqeabQanQ=
 		</data>
 		<key>Headers/LBeacon.h</key>
 		<data>
@@ -50,23 +42,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		qDAVzBYC6m3k1mA6SjWr4d27EHo=
+		Z7YsKTllckox9W2fjrHVWJ1xz70=
 		</data>
 		<key>Modules/BeaconFramework.swiftmodule/arm.swiftdoc</key>
 		<data>
-		/DuhBXeF1FK5we2BK1TyGvQaes0=
+		em8AYKOzOvyPA8a73O37jjK9cVs=
 		</data>
 		<key>Modules/BeaconFramework.swiftmodule/arm.swiftmodule</key>
 		<data>
-		A3AuVzCOn0AF3g1t9pqnjigGR0c=
+		fxQhfNx8fjB+njvznfGhZNA+y8k=
 		</data>
 		<key>Modules/BeaconFramework.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		+4LzYBB6SmgjBPLhEr4T9Ki9pWk=
+		14pqs2dcFyUkOSeHyE1V57A72Uo=
 		</data>
 		<key>Modules/BeaconFramework.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		LEjIp5bZ/B9DuC8OBGQK7WbWeyw=
+		59+0U+QuN7Qr5/ZmKQ56oUGsQzM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -79,44 +71,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JiLV/PU448BMSKwjyyQN/dUpu2I=
+			jBaGZYpext1oP3et7XkdlpSY4hM=
 			</data>
 			<key>hash2</key>
 			<data>
-			u4KSRLh6xkq1/GgS0RDgApAJz81rLP7r/Nj9fFVhpi8=
+			3I419gVDw1x0aoBepAtwUzPoUzriKDtDn0rSmFsRFCc=
 			</data>
 		</dict>
 		<key>Headers/BeaconFramework.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4emABjBbMe7SuPrsBJnbpi6P+ZQ=
+			7CIZTS/jpLGEFMIIOouqeabQanQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			5sVb8vM2NyP8OBlmFpsQM22o7Ec1FimJ9rJnVgyYeG8=
-			</data>
-		</dict>
-		<key>Headers/CannexBeacon.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			IXucGd5Rtkk0d4liovhmT4x17h8=
-			</data>
-			<key>hash2</key>
-			<data>
-			6wGKwjDbL2Ak54Kh7NXCGcPlJW1qo8rOno1QJefVf6g=
-			</data>
-		</dict>
-		<key>Headers/CannexBeaconManager.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			IngTMcS9qOYt4ykmebM+qSwCKy8=
-			</data>
-			<key>hash2</key>
-			<data>
-			WtCZSaHjt20S8pcweVXEIOQDSsK+CsRpgfCvbjt7MFY=
+			Yd+NXd+B5IJu2bDyyOEDHYwkEzHx7/jlm+1QpsXL/mY=
 			</data>
 		</dict>
 		<key>Headers/LBeacon.h</key>
@@ -200,44 +170,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/DuhBXeF1FK5we2BK1TyGvQaes0=
+			em8AYKOzOvyPA8a73O37jjK9cVs=
 			</data>
 			<key>hash2</key>
 			<data>
-			3TbZBqcrHwBPZdfnNRTigF66JEIBqY9vUgIOWGNp7o4=
+			Tyicohp5WXsDO7y7Hkx64ovCdWQZY9/kVRblUaaWwPg=
 			</data>
 		</dict>
 		<key>Modules/BeaconFramework.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			A3AuVzCOn0AF3g1t9pqnjigGR0c=
+			fxQhfNx8fjB+njvznfGhZNA+y8k=
 			</data>
 			<key>hash2</key>
 			<data>
-			WHDsCHwKa0n5RH1/4x+V8ncXdQ5DnSYmU5J71mw8fMU=
+			VK/SWkDQz0LAO+ZIp/qFB0MxZeUxX5Vjt1lmdvtTXJU=
 			</data>
 		</dict>
 		<key>Modules/BeaconFramework.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+4LzYBB6SmgjBPLhEr4T9Ki9pWk=
+			14pqs2dcFyUkOSeHyE1V57A72Uo=
 			</data>
 			<key>hash2</key>
 			<data>
-			4+KNTKulBoqrOnfNaFR1kXAeLoBELilbbkZuapY1nPM=
+			flbEVPmdPXmt3rT0z8LEkqZ9Vvf1Guz7/HQv6i7y3Hc=
 			</data>
 		</dict>
 		<key>Modules/BeaconFramework.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LEjIp5bZ/B9DuC8OBGQK7WbWeyw=
+			59+0U+QuN7Qr5/ZmKQ56oUGsQzM=
 			</data>
 			<key>hash2</key>
 			<data>
-			X58nzST+LJYAgof36dn9uOwUIVG37hFITuYf4aw/J20=
+			rQja19dW7AmLpaCSJW09PFvdrXc2vVQo8c1/juzqY0c=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
