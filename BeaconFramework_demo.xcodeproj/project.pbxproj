@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		B449BE5F1CABDD34008CF61E /* BeaconFramework_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B449BE5E1CABDD34008CF61E /* BeaconFramework_demoTests.swift */; };
 		B449BE6A1CABDD35008CF61E /* BeaconFramework_demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B449BE691CABDD35008CF61E /* BeaconFramework_demoUITests.swift */; };
-		B45007C71E07E8E500AB92E2 /* BeaconFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B45007C61E07E8E500AB92E2 /* BeaconFramework.framework */; };
-		B45007C81E07E8EA00AB92E2 /* BeaconFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B45007C61E07E8E500AB92E2 /* BeaconFramework.framework */; };
-		B45007C91E07E8EA00AB92E2 /* BeaconFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B45007C61E07E8E500AB92E2 /* BeaconFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B483FECF1E0D1D5E001464EC /* BeaconFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B483FECE1E0D1D5E001464EC /* BeaconFramework.framework */; };
+		B483FED01E0D1D64001464EC /* BeaconFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B483FECE1E0D1D5E001464EC /* BeaconFramework.framework */; };
+		B483FED11E0D1D64001464EC /* BeaconFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B483FECE1E0D1D5E001464EC /* BeaconFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B4E649E31D38F08B00C10002 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E649D51D38F08B00C10002 /* AppDelegate.swift */; };
 		B4E649E41D38F08B00C10002 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4E649D61D38F08B00C10002 /* Assets.xcassets */; };
 		B4E649E51D38F08B00C10002 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4E649D71D38F08B00C10002 /* LaunchScreen.storyboard */; };
@@ -50,7 +50,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B45007C91E07E8EA00AB92E2 /* BeaconFramework.framework in Embed Frameworks */,
+				B483FED11E0D1D64001464EC /* BeaconFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,7 +65,7 @@
 		B449BE651CABDD35008CF61E /* BeaconFramework_demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeaconFramework_demoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B449BE691CABDD35008CF61E /* BeaconFramework_demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconFramework_demoUITests.swift; sourceTree = "<group>"; };
 		B449BE6B1CABDD35008CF61E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B45007C61E07E8E500AB92E2 /* BeaconFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BeaconFramework.framework; sourceTree = "<group>"; };
+		B483FECE1E0D1D5E001464EC /* BeaconFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BeaconFramework.framework; sourceTree = "<group>"; };
 		B4E649D51D38F08B00C10002 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4E649D61D38F08B00C10002 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4E649D81D38F08B00C10002 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -85,8 +85,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B45007C71E07E8E500AB92E2 /* BeaconFramework.framework in Frameworks */,
-				B45007C81E07E8EA00AB92E2 /* BeaconFramework.framework in Frameworks */,
+				B483FECF1E0D1D5E001464EC /* BeaconFramework.framework in Frameworks */,
+				B483FED01E0D1D64001464EC /* BeaconFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +110,7 @@
 		B449BE391CABDD34008CF61E = {
 			isa = PBXGroup;
 			children = (
-				B45007C61E07E8E500AB92E2 /* BeaconFramework.framework */,
+				B483FECE1E0D1D5E001464EC /* BeaconFramework.framework */,
 				B4E649D41D38F08B00C10002 /* BeaconFramework_demo */,
 				B4F9FD6F1CB64123005ED974 /* Images */,
 				B449BE5D1CABDD34008CF61E /* BeaconFramework_demoTests */,
@@ -253,6 +253,7 @@
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = ES9333BX3M;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 					};
 					B449BE591CABDD34008CF61E = {
 						CreatedOnToolsVersion = 7.2;
@@ -398,6 +399,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -442,6 +444,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -467,6 +470,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = ES9333BX3M;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -480,6 +484,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "iii.ideas.BeaconFramework-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -490,6 +496,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = ES9333BX3M;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -503,6 +510,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "iii.ideas.BeaconFramework-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
