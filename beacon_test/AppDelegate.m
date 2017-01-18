@@ -33,7 +33,7 @@
     // Override point for customization after application launch.
     
     //Initial BeaconFramework
-     _notification = [Notification new] ;
+     _notification = [IIINotification new] ;
     _iiibeacon = [IIIBeacon new];
     //_detection = [IIIBeaconDetection new];
     

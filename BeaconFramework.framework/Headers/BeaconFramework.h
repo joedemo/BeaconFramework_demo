@@ -17,7 +17,7 @@ FOUNDATION_EXPORT const unsigned char BeaconFrameworkVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <BeaconFramework/PublicHeader.h>
 
 
-#import <BeaconFramework/Notification.h>
+#import <BeaconFramework/IIINotification.h>
 #import <BeaconFramework/IIIBeaconDetection.h>
 #import <BeaconFramework/IIIBeacon.h>
 #import <BeaconFramework/Manager.h>

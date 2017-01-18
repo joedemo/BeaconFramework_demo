@@ -6,11 +6,11 @@
 	<dict>
 		<key>.DS_Store</key>
 		<data>
-		yIZD9kl4I+wwWzuJOurYzy+i/3I=
+		QOAzc4W+RIaofil42oWu/3MTsl8=
 		</data>
 		<key>Headers/BeaconFramework.h</key>
 		<data>
-		OFgrSLtGQ1wiRhhKUVWQoFijfj8=
+		HDQRmP5Zs6WA3kOetnsAXTZAFcQ=
 		</data>
 		<key>Headers/Global.h</key>
 		<data>
@@ -22,7 +22,11 @@
 		</data>
 		<key>Headers/IIIBeaconDetection.h</key>
 		<data>
-		UQYHNgQCU4AeHlg4HuYTxATSwRs=
+		EKqImKSdACmnhqGZXcjTJinFYWE=
+		</data>
+		<key>Headers/IIINotification.h</key>
+		<data>
+		Xxcap3abjHAmdBPMGd5Okd8PJY8=
 		</data>
 		<key>Headers/LBeacon.h</key>
 		<data>
@@ -52,17 +56,13 @@
 		<data>
 		XFUlxWbhqBHgg11JqQVVbOBmGa0=
 		</data>
-		<key>Headers/Notification.h</key>
-		<data>
-		s/T9TwHWQ+VsIkUEK2z00wLYY30=
-		</data>
 		<key>Headers/libLBeaconKit.h</key>
 		<data>
 		ijEtafupiKK2kOm9fudL/Gb+gyg=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ifxqwMROrakJwpIS1GjUHVVrOAg=
+		yO9+nRXJbeIeRhnasV9UgPGZTg4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -75,11 +75,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OFgrSLtGQ1wiRhhKUVWQoFijfj8=
+			HDQRmP5Zs6WA3kOetnsAXTZAFcQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			zznbzbQECTkWRULeWtha0CYVh02VKs8Lof/fyV9wgG0=
+			vN5nfNdWBD0fH5HaYi59LPSQ/y3K2W3aCtZN+XXw3Fc=
 			</data>
 		</dict>
 		<key>Headers/Global.h</key>
@@ -108,11 +108,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UQYHNgQCU4AeHlg4HuYTxATSwRs=
+			EKqImKSdACmnhqGZXcjTJinFYWE=
 			</data>
 			<key>hash2</key>
 			<data>
-			qZqM9zFA9nV/G4eTC59GGjtFHs6AXV2s+w9BXT23b9M=
+			KJFCAuwlP0blJJ3X9qg5rs9d7x1RuwwE4Yr/dQ2W0A4=
+			</data>
+		</dict>
+		<key>Headers/IIINotification.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Xxcap3abjHAmdBPMGd5Okd8PJY8=
+			</data>
+			<key>hash2</key>
+			<data>
+			4G1BpqIbikdrFE9456XHN6AGTpT2sW7ybN3tn8SqZzM=
 			</data>
 		</dict>
 		<key>Headers/LBeacon.h</key>
@@ -190,17 +201,6 @@
 			<key>hash2</key>
 			<data>
 			LJ7zl4ZNBCu55kfogeFBsjhA4kuRwXr4gAfWymfOHT8=
-			</data>
-		</dict>
-		<key>Headers/Notification.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			s/T9TwHWQ+VsIkUEK2z00wLYY30=
-			</data>
-			<key>hash2</key>
-			<data>
-			hypotMPYOuqT9BiBPqdPZAY0JJmFIL4RVLiMXzU8eYs=
 			</data>
 		</dict>
 		<key>Headers/libLBeaconKit.h</key>
