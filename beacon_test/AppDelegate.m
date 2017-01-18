@@ -104,7 +104,6 @@
     
     if (_detection.ActiveBeaconList.count > 0) {
         for (ActiveBeacon* key in [self.detection ActiveBeaconList]) {
-             //NSLog(@"%@", key.id);
             
             BOOL found = NO;
             
