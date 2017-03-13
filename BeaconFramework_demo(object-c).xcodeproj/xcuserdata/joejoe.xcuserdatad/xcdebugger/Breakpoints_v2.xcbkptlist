@@ -118,7 +118,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "beacon_test/AppDelegate.m"
@@ -470,7 +470,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "beacon_test/AppDelegate.m"
@@ -483,33 +483,33 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  shouldBeEnabled = "No"
+                  shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "-[AppDelegate BeaconDetectd]"
                   moduleName = "BeaconFramework_demo(object-c)"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/joejoe/Documents/Project/BeaconFramework_demo-IIIBeaconDetect-object-c-static/beacon_test/AppDelegate.m"
-                  timestampString = "506422815.290398"
+                  urlString = "file:///Users/joejoe/Documents/Project/demo/beacon_test/AppDelegate.m"
+                  timestampString = "511091500.882325"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "126"
-                  endingLineNumber = "126"
+                  startingLineNumber = "125"
+                  endingLineNumber = "125"
                   offsetFromSymbolStart = "848">
                </Location>
                <Location
-                  shouldBeEnabled = "No"
+                  shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "__28-[AppDelegate BeaconDetectd]_block_invoke"
                   moduleName = "BeaconFramework_demo(object-c)"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/joejoe/Documents/Project/BeaconFramework_demo-IIIBeaconDetect-object-c-static/beacon_test/AppDelegate.m"
-                  timestampString = "506422815.293176"
+                  urlString = "file:///Users/joejoe/Documents/Project/demo/beacon_test/AppDelegate.m"
+                  timestampString = "511091500.884077"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "127"
-                  endingLineNumber = "127"
+                  startingLineNumber = "126"
+                  endingLineNumber = "126"
                   offsetFromSymbolStart = "60">
                </Location>
             </Locations>
@@ -694,7 +694,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "beacon_test/AppDelegate.m"
@@ -774,7 +774,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "beacon_test/AppDelegate.m"

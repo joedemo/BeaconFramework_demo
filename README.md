@@ -12,26 +12,20 @@ Add the BeaconFramework.framework file to xcode project
 ####Object-C:
    Please Check out the sample code
     
-
 ##Requirements
-- Xcode 7.3 or higher
+- Xcode 8 or higher
 - iOS 7.0 or higher
 
 ##Demo
 ####Swift:
-- IIIBeaconDetect branch
+- swift3 branch
 
   Build and run the BeaconFramework_demo.xcodeproj in Xcode
 
 ####Object-C:
-- IIIBeaconDetect(object-c) branch
-
-  Build and run the BeaconFramework_demo(object-c) in Xcode
-
-####IIIBeaconDetect(iOS7.0):
 - IIIBeaconDetect(iOS7.0) branch
 
-  Build and run the IIIBeaconDetect(iOS7.0) in Xcode
+  Build and run the BeaconFramework_demo(object-c) in Xcode
 
 
 ##iOS 9 App Transport Security issue
