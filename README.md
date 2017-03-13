@@ -15,37 +15,24 @@ Add the BeaconFramework.framework to Embedded Binaries
 
 ![image](https://raw.githubusercontent.com/joedemo/BeaconFramework_demo/master/BeaconFramework_demo/image2.png)
 
-#####Object-C
-Same as Swift, But you must set Embedded Content Contains Swift Code to "Yes" in Build Settings
-
-![image](https://raw.githubusercontent.com/joedemo/BeaconFramework_demo/master/BeaconFramework_demo/image3.png)
-
 ##Examples
-####Swift:
-   Please Check out the sample code
-####Object-C:
-   Please Check out the IIIBeaconDetect(object-c) branch    
+  
+   Please Check out the sample code   
     
-
 ##Requirements
-- Xcode 7.3 or higher
+- Xcode 8 or higher
 - iOS 8.0 or higher
 
 ##Demo
 ####Swift:
-- IIIBeaconDetect branch
+- swift3 branch
 
   Build and run the BeaconFramework_demo.xcodeproj in Xcode
 
 ####Object-C:
-- IIIBeaconDetect(obj-c) branch
-
-  Build and run the BeaconFramework_demo(object-c) in Xcode
-
-####Object-C(iOS7.0):
 - IIIBeaconDetect(iOS7.0) branch
 
-  Build and run the IIIBeaconDetect(iOS7.0) in Xcode
+  Build and run the BeaconFramework_demo(object-c) in Xcode
 
 ##iOS 9 App Transport Security issue
 
