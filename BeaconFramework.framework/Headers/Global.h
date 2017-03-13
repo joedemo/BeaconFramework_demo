@@ -47,10 +47,27 @@
 @property (atomic, weak) NSString * _Nullable validEndDate;
 @end
 
+@interface Link : NSObject
+@property (atomic, weak) NSString * _Nullable templateName;
+@property (atomic, weak) NSString * _Nullable templateDescription;
+@property (atomic, weak) NSString * _Nullable name;
+@property (atomic, weak) NSString * _Nullable linkDescription;
+@property (atomic, weak) NSString * _Nullable url;
+@end
+
+@interface Text : NSObject
+@property (atomic, weak) NSString * _Nullable templateName;
+@property (atomic, weak) NSString * _Nullable templateDescription;
+@property (atomic, weak) NSString * _Nullable name;
+@property (atomic, weak) NSString * _Nullable textcontent;
+@end
+
 
 @interface PushContent : NSObject
 @property (atomic, strong) NSMutableArray * _Nonnull coupons;
 @property (atomic, strong) NSMutableArray * _Nonnull products;
+@property (atomic, strong) NSMutableArray * _Nonnull links;
+@property (atomic, strong) NSMutableArray * _Nonnull texts;
 @end
 
 

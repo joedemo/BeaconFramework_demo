@@ -6,7 +6,7 @@
 	<dict>
 		<key>.DS_Store</key>
 		<data>
-		QOAzc4W+RIaofil42oWu/3MTsl8=
+		2UYZliFUN8NtbTx4M3A9xrzO33Q=
 		</data>
 		<key>Headers/BeaconFramework.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/Global.h</key>
 		<data>
-		7oYzx/aL9kR5H9GWXq4cHkMCPCk=
+		+9BFoW434okI6Tc4Bm4tmnEVwq8=
 		</data>
 		<key>Headers/IIIBeacon.h</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		yO9+nRXJbeIeRhnasV9UgPGZTg4=
+		7kHklZCdafR8lYPd0gSFkmB8110=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -86,11 +86,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7oYzx/aL9kR5H9GWXq4cHkMCPCk=
+			+9BFoW434okI6Tc4Bm4tmnEVwq8=
 			</data>
 			<key>hash2</key>
 			<data>
-			2PYDjGcG+p3TAHlxtNNRcgDxKKSD1VtdFLwkvLjRLrg=
+			b8Rp7gXKIsBMiQ2B/c13OvBtqT5XLr4rsUaBmxL9UfI=
 			</data>
 		</dict>
 		<key>Headers/IIIBeacon.h</key>
