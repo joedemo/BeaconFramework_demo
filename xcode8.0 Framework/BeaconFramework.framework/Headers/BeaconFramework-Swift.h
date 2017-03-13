@@ -299,6 +299,17 @@ SWIFT_CLASS("_TtCC15BeaconFramework15IIINotification7message")
 @end
 
 
+SWIFT_CLASS("_TtC15BeaconFramework4Link")
+@interface Link : NSObject
+@property (nonatomic, copy) NSString * _Nullable templateName;
+@property (nonatomic, copy) NSString * _Nullable templateDescription;
+@property (nonatomic, copy) NSString * _Nullable name;
+@property (nonatomic, copy) NSString * _Nullable linkDescription;
+@property (nonatomic, copy) NSString * _Nullable url;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 @interface NSLock (SWIFT_EXTENSION(BeaconFramework))
 @end
 
@@ -344,11 +355,24 @@ SWIFT_CLASS("_TtC15BeaconFramework7Product")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class Text;
 
 SWIFT_CLASS("_TtC15BeaconFramework11PushContent")
 @interface PushContent : NSObject
 @property (nonatomic, copy) NSArray<Coupon *> * _Nonnull coupons;
 @property (nonatomic, copy) NSArray<Product *> * _Nonnull products;
+@property (nonatomic, copy) NSArray<Link *> * _Nonnull links;
+@property (nonatomic, copy) NSArray<Text *> * _Nonnull texts;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC15BeaconFramework4Text")
+@interface Text : NSObject
+@property (nonatomic, copy) NSString * _Nullable templateName;
+@property (nonatomic, copy) NSString * _Nullable templateDescription;
+@property (nonatomic, copy) NSString * _Nullable name;
+@property (nonatomic, copy) NSString * _Nullable textcontent;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
