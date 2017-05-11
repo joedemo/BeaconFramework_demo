@@ -1,34 +1,34 @@
 # iOS Beacon Notification SDK
 III Beacon Detect and Notification Information
 
-##Installation
+## Installation
 Import the BeaconFramework.framework file
 
-####Object-C:
+#### Object-C:
 #####
 Add the BeaconFramework.framework file to xcode project
 
-##Examples
-####Object-C:
+## Examples
+#### Object-C:
    Please Check out the sample code
     
-##Requirements
+## Requirements
 - Xcode 8 or higher
 - iOS 7.0 or higher
 
-##Demo
-####Swift:
+## Demo
+#### Swift:
 - swift3 branch
 
   Build and run the BeaconFramework_demo.xcodeproj in Xcode
 
-####Object-C:
+#### Object-C:
 - IIIBeaconDetect(iOS7.0) branch
 
   Build and run the BeaconFramework_demo(object-c) in Xcode
 
 
-##iOS 9 App Transport Security issue
+## iOS 9 App Transport Security issue
 
 Apple made a radical decision with iOS 9, disabling all unsecured HTTP traffic from iOS apps..
 Here’s how to disable this issue. Open Info.plist, and add the following lines~
@@ -39,7 +39,7 @@ Here’s how to disable this issue. Open Info.plist, and add the following lines
 		<true/>
 	</dict>
 
-##iOS beacon detect setting
+## iOS beacon detect setting
 
 Apparently in iOS 8 SDK, requestAlwaysAuthorization (for background location) or requestWhenInUseAuthorization (location only when foreground) call on CLLocationManager is needed before starting location updates.
 
@@ -51,7 +51,7 @@ There also needs to be NSLocationAlwaysUsageDescription or NSLocationWhenInUseUs
 	        <string>demo</string>
 
 
-##License
+## License
 BeaconFramework_demo is available under the Apache v2 License.
 
 Copyright © 2016 Joe III.
