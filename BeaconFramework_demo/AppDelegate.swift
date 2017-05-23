@@ -57,7 +57,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, IIIBeaconDetectionDelegat
                     //Initial Detection
                     self.location_detection = IIILocationDetection(location_data: location_info)
                     
-                    //委派 IIIBeaconDetection 給 AppDelegate
+                    //委派 IIILocationDetection 給 AppDelegate
                     self.location_detection.delegate  = self
                     
                     //開始偵測
@@ -128,6 +128,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, IIIBeaconDetectionDelegat
         }
     }
     
+    //找到對應Location (required!!)
     func LocationDetectd() {
         if (location_detection.ActiveLocationList?.count)! > 0 {
             
@@ -140,7 +141,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, IIIBeaconDetectionDelegat
                     value.message = BeaconFramework.IIINotification.message()
                     value.location_id = item.location_id
                     
-                    //取得Beacon對應推播內容
+                    //取得Location對應推播內容
                     ////Production Environment ( If Test Environment, Please use get_push_message("52.69.184.56", ....) )
                     notification.get_push_message_security(security_server: "ideas.iiibeacon.net", location_id: item.location_id!, key: "app key" ){ (completion) -> () in
                         
