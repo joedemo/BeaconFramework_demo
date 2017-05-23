@@ -14,10 +14,13 @@
 @property (strong, nonatomic) UIWindow *window;
 @property (nonatomic, strong) IIINotification *notification;
 @property (nonatomic, strong) IIIBeacon *iiibeacon;
+@property (nonatomic, strong) IIILocation *iiilocation;
 @property (nonatomic, strong) message *msg;
 @property (nonatomic, strong) BeaconInfo *beacon_info;
+@property (nonatomic, strong) LocationInfo *location_info;
 
 @property (nonatomic, strong) IIIBeaconDetection *detection;
+@property (nonatomic, strong) IIILocationDetection *location_detection;
 @property (nonatomic, strong) Manager *manager;
 @property (nonatomic, strong) NSMutableArray *message_list;
 

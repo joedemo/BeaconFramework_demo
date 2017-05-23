@@ -11,7 +11,7 @@
 
 
 
-@interface AppDelegate ()<IIIBeaconDetectionDelegate>
+@interface AppDelegate ()<IIIBeaconDetectionDelegate, IIILocationDetectionDelegate>
 
 @end
 
@@ -21,6 +21,7 @@
   @public
     message *msg;
     NSString *uuid;
+    NSString *location_id;
 }
 @end
 @implementation _Message
@@ -35,6 +36,7 @@
     //Initial BeaconFramework
      _notification = [IIINotification new] ;
     _iiibeacon = [IIIBeacon new];
+    _iiilocation = [IIILocation new];
     //_detection = [IIIBeaconDetection new];
     
     //若你在同一視窗下多次建立 IIIBeaconDetection 卻未正確停止偵測, 系統將會存在多組 IIIBeaconDetection 造成系統效能耗損
@@ -69,6 +71,30 @@
     }
      
      ];
+    
+    
+    //IIILocationDetection
+    [_iiilocation get_locations_withkey_security:@"ideas.iiibeacon.net" key: @"app key" completion: ^(LocationInfo *item , BOOL Sucess) {
+        if (Sucess) {
+            //app key對應location取得成功
+            dispatch_async(dispatch_get_main_queue(), ^{
+                
+                //Initial Detection
+                _location_detection = [[IIILocationDetection alloc] initWithLocation_data:item];
+                
+                //委派 IIILocationDetection 給 AppDelegate
+                _location_detection.delegate = self;
+                
+                
+                //開始偵測
+                [_location_detection Start];
+            });
+        }
+    }
+     
+     ];
+    
+    
     
 
 
@@ -107,7 +133,7 @@
             
             BOOL found = NO;
             
-            NSPredicate *predicate = [NSPredicate predicateWithFormat:@"uuid == %@", key.id];
+            NSPredicate *predicate = [NSPredicate predicateWithFormat:@"location_id == %@", key.id];
             NSArray *filtered = [_message_list filteredArrayUsingPredicate:predicate];
             if ([filtered count] > 0) {
                 found = true;
@@ -138,6 +164,53 @@
             }
             
              
+        }
+        
+        
+    }
+}
+
+////找到對應Location (required!!)
+-(void)LocationDetectd{
+    
+    
+    
+    if (_location_detection.ActiveLocationList.count > 0) {
+        for (ActiveLocation* key in [self.location_detection ActiveLocationList]) {
+            
+            BOOL found = NO;
+            
+            NSPredicate *predicate = [NSPredicate predicateWithFormat:@"location_id == %@", key.location_id];
+            NSArray *filtered = [_message_list filteredArrayUsingPredicate:predicate];
+            if ([filtered count] > 0) {
+                found = true;
+                
+            }
+            if (!found) {
+                
+                //建立推播內容物件
+                _Message *message_item = [_Message new];
+                message_item->msg = [message new];
+                message_item->location_id = key.location_id;
+                
+                //                //取得Location對應推播內容
+                //                 //Production Environment ( If Test Environment, Please use get_push_message:@"52.69.184.56" .... )
+                [_notification get_push_message_security:@"ideas.iiibeacon.net" location_id: key.location_id key:@"app key" completion:^(message *item, BOOL Sucess){
+                    if (Sucess) {
+                        //資料回傳成功
+                        if (item.content.coupons.count > 0) {
+                            NSLog(@"%@", [item.content.coupons[0] photoUrl]);
+                        }
+                        
+                    }
+                }];
+                
+                [_message_list addObject:message_item];
+                
+                
+            }
+            
+            
         }
         
         

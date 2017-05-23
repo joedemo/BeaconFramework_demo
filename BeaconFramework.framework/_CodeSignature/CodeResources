@@ -4,13 +4,9 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		2UYZliFUN8NtbTx4M3A9xrzO33Q=
-		</data>
 		<key>Headers/BeaconFramework.h</key>
 		<data>
-		HDQRmP5Zs6WA3kOetnsAXTZAFcQ=
+		8T13wIl9HmrCOZhLnKErOqDfGfw=
 		</data>
 		<key>Headers/Global.h</key>
 		<data>
@@ -18,15 +14,23 @@
 		</data>
 		<key>Headers/IIIBeacon.h</key>
 		<data>
-		qSgfrxkBKLKYNfI0SLPyiKs6oj0=
+		QR5wOaHviqiufEfd+UVRwrVrXo0=
 		</data>
 		<key>Headers/IIIBeaconDetection.h</key>
 		<data>
 		UQYHNgQCU4AeHlg4HuYTxATSwRs=
 		</data>
+		<key>Headers/IIILocation.h</key>
+		<data>
+		ZE+fyMl5HB0qWGEbROMbQAwCIvU=
+		</data>
+		<key>Headers/IIILocationDetection.h</key>
+		<data>
+		L9c2O8lB+k9VCJjl0VgAvnFsxV0=
+		</data>
 		<key>Headers/IIINotification.h</key>
 		<data>
-		Xxcap3abjHAmdBPMGd5Okd8PJY8=
+		4MGadoczN5314XhmJmvmhngLVgs=
 		</data>
 		<key>Headers/LBeacon.h</key>
 		<data>
@@ -62,7 +66,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		7kHklZCdafR8lYPd0gSFkmB8110=
+		vIMALc3n3Nq7JqTou3/C6AaRbjk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -75,11 +79,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HDQRmP5Zs6WA3kOetnsAXTZAFcQ=
+			8T13wIl9HmrCOZhLnKErOqDfGfw=
 			</data>
 			<key>hash2</key>
 			<data>
-			vN5nfNdWBD0fH5HaYi59LPSQ/y3K2W3aCtZN+XXw3Fc=
+			mPiLuHhODJ1j96mVKVRoAkJYznUhlfGMoW57cGNbE1Q=
 			</data>
 		</dict>
 		<key>Headers/Global.h</key>
@@ -97,11 +101,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qSgfrxkBKLKYNfI0SLPyiKs6oj0=
+			QR5wOaHviqiufEfd+UVRwrVrXo0=
 			</data>
 			<key>hash2</key>
 			<data>
-			4/nsnqHEJZzTADr5tgSKCZs+s62JjpE0WoD3+kN4JQ0=
+			rdhaeELWE2AizVFuLwbWTLro2rsmYlJS4ylJiJbWeSA=
 			</data>
 		</dict>
 		<key>Headers/IIIBeaconDetection.h</key>
@@ -115,15 +119,37 @@
 			qZqM9zFA9nV/G4eTC59GGjtFHs6AXV2s+w9BXT23b9M=
 			</data>
 		</dict>
+		<key>Headers/IIILocation.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZE+fyMl5HB0qWGEbROMbQAwCIvU=
+			</data>
+			<key>hash2</key>
+			<data>
+			2YRaiMImeFMcNtFUAvc/JpVftq/U5yfo0143ShrZ49g=
+			</data>
+		</dict>
+		<key>Headers/IIILocationDetection.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			L9c2O8lB+k9VCJjl0VgAvnFsxV0=
+			</data>
+			<key>hash2</key>
+			<data>
+			0SDz1AQ31c9cPXcIniJaT5HeW+SaKefcpleHrPZ2078=
+			</data>
+		</dict>
 		<key>Headers/IIINotification.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Xxcap3abjHAmdBPMGd5Okd8PJY8=
+			4MGadoczN5314XhmJmvmhngLVgs=
 			</data>
 			<key>hash2</key>
 			<data>
-			4G1BpqIbikdrFE9456XHN6AGTpT2sW7ybN3tn8SqZzM=
+			z3QqLomdEZnq4tjbBNRFMfuRAdHab28/ojsKP+91Lrk=
 			</data>
 		</dict>
 		<key>Headers/LBeacon.h</key>
@@ -244,6 +270,11 @@
 			<key>weight</key>
 			<real>1100</real>
 		</dict>
+		<key>^Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
+		</dict>
 		<key>^version.plist$</key>
 		<true/>
 	</dict>
@@ -288,6 +319,11 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
+		</dict>
+		<key>^Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
 		</dict>
 		<key>^Info\.plist$</key>
 		<dict>
