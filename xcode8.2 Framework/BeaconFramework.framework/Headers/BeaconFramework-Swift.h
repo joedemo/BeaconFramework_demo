@@ -136,6 +136,17 @@ SWIFT_CLASS("_TtC15BeaconFramework12ActiveBeacon")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class CLLocation;
+
+SWIFT_CLASS("_TtC15BeaconFramework14ActiveLocation")
+@interface ActiveLocation : NSObject
+@property (nonatomic, copy) NSString * _Nullable location_id;
+@property (nonatomic, copy) NSString * _Nullable location_name;
+@property (nonatomic, strong) NSNumber * _Nullable radius;
+@property (nonatomic, strong) CLLocation * _Nullable location;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC15BeaconFramework6Beacon")
 @interface Beacon : NSObject
@@ -279,6 +290,47 @@ SWIFT_PROTOCOL("_TtP15BeaconFramework26IIIBeaconDetectionDelegate_")
 - (void)BeaconDetectd;
 @end
 
+@class LocationInfo;
+
+SWIFT_CLASS("_TtC15BeaconFramework11IIILocation")
+@interface IIILocation : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)get_locations_withkeyWithServer_ip:(NSString * _Nonnull)server_ip key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(LocationInfo * _Nonnull, BOOL))completion;
+- (void)get_locations_withkey_securityWithServer:(NSString * _Nonnull)server key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(LocationInfo * _Nonnull, BOOL))completion;
+- (void)setLogAccountWithAccount:(NSString * _Nonnull)account;
+@end
+
+
+SWIFT_CLASS("_TtCC15BeaconFramework11IIILocation12LocationInfo")
+@interface LocationInfo : NSObject
+@property (nonatomic, copy) NSString * _Nullable state;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@protocol IIILocationDetectionDelegate;
+
+SWIFT_CLASS("_TtC15BeaconFramework20IIILocationDetection")
+@interface IIILocationDetection : NSObject
+@property (nonatomic, weak) id <IIILocationDetectionDelegate> _Nullable delegate;
+@property (nonatomic, copy) NSArray<ActiveLocation *> * _Nullable ActiveLocationList;
+@property (nonatomic) NSInteger BeaconCountFrequency;
+@property (nonatomic) NSInteger Hold_time;
+@property (nonatomic) NSInteger BeaconLogtime;
+@property (nonatomic, copy) NSString * _Nullable Status;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithServer_ip:(NSString * _Nonnull)server_ip key:(NSString * _Nonnull)key OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSecurity_server:(NSString * _Nonnull)security_server key:(NSString * _Nonnull)key OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithLocation_data:(LocationInfo * _Nonnull)location_data OBJC_DESIGNATED_INITIALIZER;
+- (void)Start;
+- (void)Stop;
+@end
+
+
+SWIFT_PROTOCOL("_TtP15BeaconFramework28IIILocationDetectionDelegate_")
+@protocol IIILocationDetectionDelegate
+- (void)LocationDetectd;
+@end
+
 @class message;
 
 SWIFT_CLASS("_TtC15BeaconFramework15IIINotification")
@@ -288,10 +340,12 @@ SWIFT_CLASS("_TtC15BeaconFramework15IIINotification")
 - (void)get_push_messageWithServer_ip:(NSString * _Nonnull)server_ip major:(NSInteger)major minor:(NSInteger)minor key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(message * _Nonnull, BOOL))completion;
 - (void)get_push_messageWithServer_ip:(NSString * _Nonnull)server_ip beacon_id:(NSString * _Nonnull)beacon_id key:(NSString * _Nonnull)key msg:(message * _Nonnull)msg;
 - (void)get_push_messageWithServer_ip:(NSString * _Nonnull)server_ip beacon_id:(NSString * _Nonnull)beacon_id key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(message * _Nonnull, BOOL))completion;
+- (void)get_push_messageWithServer_ip:(NSString * _Nonnull)server_ip location_id:(NSString * _Nonnull)location_id key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(message * _Nonnull, BOOL))completion;
 - (void)get_push_message_securityWithSecurity_server:(NSString * _Nonnull)security_server major:(NSInteger)major minor:(NSInteger)minor key:(NSString * _Nonnull)key msg:(message * _Nonnull)msg;
 - (void)get_push_message_securityWithSecurity_server:(NSString * _Nonnull)security_server major:(NSInteger)major minor:(NSInteger)minor key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(message * _Nonnull, BOOL))completion;
 - (void)get_push_message_securityWithSecurity_server:(NSString * _Nonnull)security_server beacon_id:(NSString * _Nonnull)beacon_id key:(NSString * _Nonnull)key msg:(message * _Nonnull)msg;
 - (void)get_push_message_securityWithSecurity_server:(NSString * _Nonnull)security_server beacon_id:(NSString * _Nonnull)beacon_id key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(message * _Nonnull, BOOL))completion;
+- (void)get_push_message_securityWithSecurity_server:(NSString * _Nonnull)security_server location_id:(NSString * _Nonnull)location_id key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(message * _Nonnull, BOOL))completion;
 @end
 
 @class PushContent;
@@ -303,15 +357,49 @@ SWIFT_CLASS("_TtCC15BeaconFramework15IIINotification7message")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSCoder;
 
-SWIFT_CLASS("_TtC15BeaconFramework4Link")
-@interface Link : NSObject
+SWIFT_CLASS("_TtC15BeaconFramework9JLocation")
+@interface JLocation : CLLocation
+@property (nonatomic, copy) NSString * _Null_unspecified locationIdentifier;
+- (nonnull instancetype)initWithLatitude:(CLLocationDegrees)latitude longitude:(CLLocationDegrees)longitude radius:(double)radius identifier:(NSString * _Nonnull)identifier;
+- (nonnull instancetype)initWithLatitude:(CLLocationDegrees)latitude longitude:(CLLocationDegrees)longitude OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithCoordinate:(CLLocationCoordinate2D)coordinate altitude:(CLLocationDistance)altitude horizontalAccuracy:(CLLocationAccuracy)hAccuracy verticalAccuracy:(CLLocationAccuracy)vAccuracy timestamp:(NSDate * _Nonnull)timestamp OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithCoordinate:(CLLocationCoordinate2D)coordinate altitude:(CLLocationDistance)altitude horizontalAccuracy:(CLLocationAccuracy)hAccuracy verticalAccuracy:(CLLocationAccuracy)vAccuracy course:(CLLocationDirection)course speed:(CLLocationSpeed)speed timestamp:(NSDate * _Nonnull)timestamp OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC15BeaconFramework7JRegion")
+@interface JRegion : CLCircularRegion
+@property (nonatomic, copy) NSString * _Null_unspecified regionIdentifier;
+@property (nonatomic, copy) NSDate * _Null_unspecified previousDate;
+@property (nonatomic) BOOL firstNotify;
+- (nonnull instancetype)initWithCenterPoint:(CLLocationCoordinate2D)centerPoint radius:(CLLocationDistance)radius identifier:(NSString * _Nonnull)identifier;
+- (nonnull instancetype)initWithCenter:(CLLocationCoordinate2D)center radius:(CLLocationDistance)radius identifier:(NSString * _Nonnull)identifier OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC15BeaconFramework5Links")
+@interface Links : NSObject
 @property (nonatomic, copy) NSString * _Nullable templateName;
 @property (nonatomic, copy) NSString * _Nullable templateDescription;
 @property (nonatomic, copy) NSString * _Nullable name;
 @property (nonatomic, copy) NSString * _Nullable linkDescription;
 @property (nonatomic, copy) NSString * _Nullable url;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC15BeaconFramework15LocationManager")
+@interface LocationManager : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithDetectInstanceNumber:(NSInteger)detectInstanceNumber OBJC_DESIGNATED_INITIALIZER;
+- (void)stopAll;
+- (void)stopWithIdentification:(NSString * _Nonnull)identification;
 @end
 
 
@@ -360,20 +448,20 @@ SWIFT_CLASS("_TtC15BeaconFramework7Product")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class Text;
+@class Texts;
 
 SWIFT_CLASS("_TtC15BeaconFramework11PushContent")
 @interface PushContent : NSObject
 @property (nonatomic, copy) NSArray<Coupon *> * _Nonnull coupons;
 @property (nonatomic, copy) NSArray<Product *> * _Nonnull products;
-@property (nonatomic, copy) NSArray<Link *> * _Nonnull links;
-@property (nonatomic, copy) NSArray<Text *> * _Nonnull texts;
+@property (nonatomic, copy) NSArray<Links *> * _Nonnull links;
+@property (nonatomic, copy) NSArray<Texts *> * _Nonnull texts;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
-SWIFT_CLASS("_TtC15BeaconFramework4Text")
-@interface Text : NSObject
+SWIFT_CLASS("_TtC15BeaconFramework5Texts")
+@interface Texts : NSObject
 @property (nonatomic, copy) NSString * _Nullable templateName;
 @property (nonatomic, copy) NSString * _Nullable templateDescription;
 @property (nonatomic, copy) NSString * _Nullable name;
@@ -381,7 +469,6 @@ SWIFT_CLASS("_TtC15BeaconFramework4Text")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSCoder;
 
 /**
   This is how to upload files in SwiftHTTP. The upload object represents a file to upload by either a data blob or a url (which it reads off disk).
@@ -418,6 +505,12 @@ SWIFT_CLASS("_TtC15BeaconFramework6Upload")
 
 
 @interface Upload (SWIFT_EXTENSION(BeaconFramework))
+@end
+
+
+SWIFT_CLASS("_TtC15BeaconFramework11iiiLocation")
+@interface iiiLocation : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #pragma clang diagnostic pop

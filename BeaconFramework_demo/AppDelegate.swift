@@ -11,14 +11,17 @@ import BeaconFramework
 
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, IIIBeaconDetectionDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, IIIBeaconDetectionDelegate, IIILocationDetectionDelegate {
 
     var window: UIWindow?
     
     //Initial BeaconFramework
     var notification = BeaconFramework.IIINotification()
     var detection = IIIBeaconDetection()
+    var location_detection = IIILocationDetection()
+    
     var iiibeacon = IIIBeacon()
+    var iiilocation = IIILocation()
     
     //建立推播內容物件列表
     var message_list: [_Message] = []
@@ -45,6 +48,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate, IIIBeaconDetectionDelegat
                     
                 })            }
             }
+        )
+        
+        iiilocation.get_locations_withkey_security(server: "ideas.iiibeacon.net", key: "app key", completion: { (location_info: IIILocation.LocationInfo, Sucess: Bool) in
+            if(Sucess){
+                DispatchQueue.main.async(execute: {
+                    
+                    //Initial Detection
+                    self.location_detection = IIILocationDetection(location_data: location_info)
+                    
+                    //委派 IIIBeaconDetection 給 AppDelegate
+                    self.location_detection.delegate  = self
+                    
+                    //開始偵測
+                    self.location_detection.Start()
+                    
+                })            }
+        }
         )
         
 
@@ -108,11 +128,47 @@ class AppDelegate: UIResponder, UIApplicationDelegate, IIIBeaconDetectionDelegat
         }
     }
     
+    func LocationDetectd() {
+        if (location_detection.ActiveLocationList?.count)! > 0 {
+            
+            for item in location_detection.ActiveLocationList! {
+                
+                if !message_list.contains(where: {$0.location_id == item.location_id}) {
+                    
+                    let value = _Message()
+                    //建立推播內容物件
+                    value.message = BeaconFramework.IIINotification.message()
+                    value.location_id = item.location_id
+                    
+                    //取得Beacon對應推播內容
+                    ////Production Environment ( If Test Environment, Please use get_push_message("52.69.184.56", ....) )
+                    notification.get_push_message_security(security_server: "ideas.iiibeacon.net", location_id: item.location_id!, key: "app key" ){ (completion) -> () in
+                        
+                        if(completion.1){
+                            
+                            //資料回傳成功
+                            if completion.0.content!.products.count > 0{
+                                print("已取得 " + item.location_id! + " 資料; photoUrl: " + completion.0.content!.products[0].photoUrl!)
+                            }
+                            
+                        }
+                    }
+                    
+                    
+                    message_list.append(value)
+                }
+                
+            }
+            
+        }
+    }
+    
     //建立推播內容清單資料結構
     class _Message {
         //推播內容物件
         var message: BeaconFramework.IIINotification.message?
         var uuid: String?
+        var location_id: String?
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
