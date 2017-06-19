@@ -4,10 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		2UYZliFUN8NtbTx4M3A9xrzO33Q=
-		</data>
 		<key>Headers/BeaconFramework.h</key>
 		<data>
 		HDQRmP5Zs6WA3kOetnsAXTZAFcQ=
@@ -22,7 +18,7 @@
 		</data>
 		<key>Headers/IIIBeaconDetection.h</key>
 		<data>
-		UQYHNgQCU4AeHlg4HuYTxATSwRs=
+		IxwqaH5ksToDWDL896zcPM9DtEY=
 		</data>
 		<key>Headers/IIINotification.h</key>
 		<data>
@@ -62,7 +58,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		7kHklZCdafR8lYPd0gSFkmB8110=
+		vIMALc3n3Nq7JqTou3/C6AaRbjk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -108,11 +104,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UQYHNgQCU4AeHlg4HuYTxATSwRs=
+			IxwqaH5ksToDWDL896zcPM9DtEY=
 			</data>
 			<key>hash2</key>
 			<data>
-			qZqM9zFA9nV/G4eTC59GGjtFHs6AXV2s+w9BXT23b9M=
+			7QRpHBx887FMgFDH26fDhUyyEdULZZ4iidalbintn9Q=
 			</data>
 		</dict>
 		<key>Headers/IIINotification.h</key>
@@ -244,6 +240,11 @@
 			<key>weight</key>
 			<real>1100</real>
 		</dict>
+		<key>^Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
+		</dict>
 		<key>^version.plist$</key>
 		<true/>
 	</dict>
@@ -288,6 +289,11 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
+		</dict>
+		<key>^Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
 		</dict>
 		<key>^Info\.plist$</key>
 		<dict>
