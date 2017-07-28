@@ -246,6 +246,8 @@ SWIFT_CLASS("_TtC15BeaconFramework9IIIBeacon")
 - (void)get_beacons_withkeyWithServer_ip:(NSString * _Nonnull)server_ip key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(BeaconInfo * _Nonnull, BOOL))completion;
 - (void)get_beacons_withkey_securityWithServer:(NSString * _Nonnull)server key:(NSString * _Nonnull)key beacon_info:(BeaconInfo * _Nonnull)beacon_info;
 - (void)get_beacons_withkey_securityWithServer:(NSString * _Nonnull)server key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(BeaconInfo * _Nonnull, BOOL))completion;
+- (void)setAccountInfoWithServer:(NSString * _Nonnull)server key:(NSString * _Nonnull)key name:(NSString * _Nonnull)name age:(NSString * _Nonnull)age sex:(NSString * _Nonnull)sex birthyear:(NSString * _Nonnull)birthyear birthmonth:(NSString * _Nonnull)birthmonth birthday:(NSString * _Nonnull)birthday job:(NSString * _Nonnull)job phone:(NSString * _Nonnull)phone email:(NSString * _Nonnull)email address:(NSString * _Nonnull)address completion:(void (^ _Nonnull)(NSString * _Nonnull, BOOL))completion;
+- (void)setAccountInfoWithServer_ip:(NSString * _Nonnull)server_ip key:(NSString * _Nonnull)key name:(NSString * _Nonnull)name age:(NSString * _Nonnull)age sex:(NSString * _Nonnull)sex birthyear:(NSString * _Nonnull)birthyear birthmonth:(NSString * _Nonnull)birthmonth birthday:(NSString * _Nonnull)birthday job:(NSString * _Nonnull)job phone:(NSString * _Nonnull)phone email:(NSString * _Nonnull)email address:(NSString * _Nonnull)address completion:(void (^ _Nonnull)(NSString * _Nonnull, BOOL))completion;
 - (void)setLogAccountWithAccount:(NSString * _Nonnull)account;
 @end
 

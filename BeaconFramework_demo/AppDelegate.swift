@@ -32,6 +32,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, IIIBeaconDetectionDelegat
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        
+        iiibeacon.setAccountInfo(server: "ideas.iiibeacon.net", key: "app key", name: "test", age: "test", sex: "test", birthyear: "test", birthmonth: "test", birthday: "test", job: "test", phone: "test", email: "1@1", address: "test", completion: { (message: String, Success: Bool) in
+            if Success {
+                print(message)
+            }
+        }
+        )
+        
+        
         //Production Environment ( If Test Environment, Please use get_beacons_withkey("52.69.184.56", key: "app key", .....) )
         iiibeacon.get_beacons_withkey_security(server: "ideas.iiibeacon.net", key: "app key", completion: { (beacon_info: IIIBeacon.BeaconInfo, Sucess: Bool) in
             if(Sucess){
