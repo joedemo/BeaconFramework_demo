@@ -71,5 +71,8 @@
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didRangeBeacons:(NSArray<CLBeacon *> * _Nonnull)beacons inRegion:(CLBeaconRegion * _Nonnull)region;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didEnterRegion:(CLRegion * _Nonnull)region;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didExitRegion:(CLRegion * _Nonnull)region;
+- (void)setCountTime:(unsigned * _Nonnull)count;
+- (void)setBeaconLogtime:(unsigned * _Nonnull)sec;
+- (void)setRestTime:(unsigned * _Nonnull)time;
 @end
 

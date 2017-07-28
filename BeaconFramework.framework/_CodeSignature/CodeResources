@@ -14,11 +14,11 @@
 		</data>
 		<key>Headers/IIIBeacon.h</key>
 		<data>
-		QR5wOaHviqiufEfd+UVRwrVrXo0=
+		yGtsHWymGAFmG66s1cMCDq6ajq0=
 		</data>
 		<key>Headers/IIIBeaconDetection.h</key>
 		<data>
-		UQYHNgQCU4AeHlg4HuYTxATSwRs=
+		IxwqaH5ksToDWDL896zcPM9DtEY=
 		</data>
 		<key>Headers/IIILocation.h</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		vIMALc3n3Nq7JqTou3/C6AaRbjk=
+		V3v4XvcUrr2zqU7X48Yq2sm+FTM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -101,22 +101,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QR5wOaHviqiufEfd+UVRwrVrXo0=
+			yGtsHWymGAFmG66s1cMCDq6ajq0=
 			</data>
 			<key>hash2</key>
 			<data>
-			rdhaeELWE2AizVFuLwbWTLro2rsmYlJS4ylJiJbWeSA=
+			mL5B16gEwbGmKgHr+Vwq0WDvZkbs4ByMMrPpcRBQap0=
 			</data>
 		</dict>
 		<key>Headers/IIIBeaconDetection.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UQYHNgQCU4AeHlg4HuYTxATSwRs=
+			IxwqaH5ksToDWDL896zcPM9DtEY=
 			</data>
 			<key>hash2</key>
 			<data>
-			qZqM9zFA9nV/G4eTC59GGjtFHs6AXV2s+w9BXT23b9M=
+			7QRpHBx887FMgFDH26fDhUyyEdULZZ4iidalbintn9Q=
 			</data>
 		</dict>
 		<key>Headers/IIILocation.h</key>

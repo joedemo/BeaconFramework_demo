@@ -49,6 +49,20 @@
     //建立timer用以驗證是否取得資料（資料將會自動傳回至對應變數）
     // _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(update) userInfo:nil repeats:YES];
     
+    //iOS推播SDK更新可回傳非可識別化資料欄位測試
+    [_iiibeacon set_account_info_security:@"ideas.iiibeacon.net" key:@"app key" name: @"test" age: @"test" sex: @"test" birthyear: @"test" birthmonth: @"test" birthday: @"test" job: @"test" phone: @"test" email: @"test" address: @"test" completion: ^(NSString *message , BOOL Sucess) {
+        if (Sucess) {
+            //app key對應beacon取得成功
+            dispatch_async(dispatch_get_main_queue(), ^{
+                
+                //Initial Detection
+            });
+        }
+    }
+     
+     ];
+    
+    
     
     //IIIBeaconDetection
     //Production Environment ( If Test Environment, Please use get_beacons_withkey:@"52.69.184.56" key: @"app key" ... )
