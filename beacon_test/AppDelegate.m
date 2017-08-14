@@ -48,6 +48,15 @@
     // _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(update) userInfo:nil repeats:YES];
     
     
+    //回傳非可識別化資料欄位
+    [_iiibeacon set_account_info_security:@"ideas.iiibeacon.net" key:@"app key" name: @"test" age: @"test" sex: @"test" birthyear: @"test" birthmonth: @"test" birthday: @"test" job: @"test" phone: @"test" email: @"test" address: @"test" completion: ^(NSString *message , BOOL Sucess) {
+        if (Sucess) {
+        }
+    }
+     
+     ];
+    
+    
     //IIIBeaconDetection
     //Production Environment ( If Test Environment, Please use get_beacons_withkey:@"52.69.184.56" key: @"app key" ... )
     [_iiibeacon get_beacons_withkey_security:@"ideas.iiibeacon.net" key: @"app key" completion: ^(BeaconInfo *item , BOOL Sucess) {

@@ -31,10 +31,13 @@
 - (void)get_push_message:(NSString * _Nonnull)server_ip major:(NSInteger)major minor:(NSInteger)minor key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(message * _Nonnull, BOOL))completion;
 - (void)get_push_message:(NSString * _Nonnull)server_ip beacon_id:(NSString * _Nonnull)beacon_id key:(NSString * _Nonnull)key msg:(message * _Nonnull)msg;
 - (void)get_push_message:(NSString * _Nonnull)server_ip beacon_id:(NSString * _Nonnull)beacon_id key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(message * _Nonnull, BOOL))completion;
+- (void)get_push_message:(NSString * _Nonnull)server_ip location_id:(NSString * _Nonnull)location_id key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(message * _Nonnull, BOOL))completion;
+
 - (void)get_push_message_security:(NSString * _Nonnull)security_server major:(NSInteger)major minor:(NSInteger)minor key:(NSString * _Nonnull)key msg:(message * _Nonnull)msg;
 - (void)get_push_message_security:(NSString * _Nonnull)security_server major:(NSInteger)major minor:(NSInteger)minor key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(message * _Nonnull, BOOL))completion;
 - (void)get_push_message_security:(NSString * _Nonnull)security_server beacon_id:(NSString * _Nonnull)beacon_id key:(NSString * _Nonnull)key msg:(message * _Nonnull)msg;
 - (void)get_push_message_security:(NSString * _Nonnull)security_server beacon_id:(NSString * _Nonnull)beacon_id key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(message * _Nonnull, BOOL))completion;
+- (void)get_push_message_security:(NSString * _Nonnull)security_server location_id:(NSString * _Nonnull)location_id key:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(message * _Nonnull, BOOL))completion;
 @end
 
 
