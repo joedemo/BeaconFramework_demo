@@ -4,3 +4,8 @@ framework module BeaconFramework {
   export *
   module * { export * }
 }
+
+module BeaconFramework.Swift {
+    header "BeaconFramework-Swift.h"
+    requires objc
+}

@@ -2,8 +2,8 @@
 //  BeaconFramework.h
 //  BeaconFramework
 //
-//  Created by JoeJoe on 2016/6/16.
-//  Copyright © 2016年 Joe. All rights reserved.
+//  Created by JoeJoe on 2016/2/19.
+//  Copyright © 2016年 JoeJoe. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -16,10 +16,4 @@ FOUNDATION_EXPORT const unsigned char BeaconFrameworkVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <BeaconFramework/PublicHeader.h>
 
-
-#import <BeaconFramework/IIINotification.h>
-#import <BeaconFramework/IIIBeaconDetection.h>
-#import <BeaconFramework/IIILocationDetection.h>
-#import <BeaconFramework/IIIBeacon.h>
-#import <BeaconFramework/IIILocation.h>
-#import <BeaconFramework/Manager.h>
+#import "libLBeaconKit.h"
